@@ -1,0 +1,1041 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{264FBADB-96A8-4A67-9DD2-A3E68FDB7AA5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FindAService_WebForm</RootNamespace>
+    <AssemblyName>FindAService_WebForm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CRUTECH STUDENTS PROJECT\Projects\cargo.com\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\layouts\layout.blogpost.master.style.css" />
+    <Content Include="Content\css\layouts\layout.blogpost.style.css" />
+    <Content Include="Content\css\layouts\layout.locator.style.css" />
+    <Content Include="Content\css\layouts\layout.invoice.gridview.style.css" />
+    <Content Include="Content\css\layouts\layout.personal.details.style.css" />
+    <Content Include="Content\css\layouts\layout.review.gridview.style.css" />
+    <Content Include="Content\css\layouts\layout.selectionview.style.css" />
+    <Content Include="Content\css\layouts\layout.reader.master.style.css" />
+    <Content Include="Content\css\layouts\layout.reader.style.css" />
+    <Content Include="Content\css\layouts\layout.business.notification.style.css" />
+    <Content Include="Content\css\layouts\layout.business.portfolio.account.style.css" />
+    <Content Include="Content\css\layouts\layout.account.portfolio.style.css" />
+    <Content Include="Content\css\layouts\layout.account.notification.style.css" />
+    <Content Include="Content\css\layouts\layout.settings.style.css" />
+    <Content Include="Content\css\layouts\layout.search.master.style.css" />
+    <Content Include="Content\css\vendors\font-awesome.style.css" />
+    <Content Include="Content\css\vendors\icon.style.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\OpenSans-Bold.svg" />
+    <Content Include="Content\fonts\OpenSans-Light.svg" />
+    <Content Include="Content\fonts\OpenSans-Regular.svg" />
+    <Content Include="Content\fonts\raleway_thin.svg" />
+    <Content Include="Default.aspx" />
+    <Content Include="Dependencies\Newtonsoft.Json.dll" />
+    <Content Include="FASDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FASDBModel.edmx</DependentUpon>
+      <LastGenOutput>FASDBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="FASDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FASDBModel.edmx</DependentUpon>
+      <LastGenOutput>FASDBModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="favicon.ico" />
+    <Content Include="favicon.png" />
+    <Content Include="Scripts\artisan.account.notification.script.js" />
+    <Content Include="Scripts\artisan.settings.script.js" />
+    <Content Include="Scripts\business.settings.script.js" />
+    <Content Include="Scripts\business.account.notification.script.js" />
+    <Content Include="Scripts\checkout.script.js" />
+    <Content Include="Scripts\contactus.script.js" />
+    <Content Include="Scripts\package.selection.script.js" />
+    <Content Include="Scripts\xhr.script.js" />
+    <Content Include="Views\blogpost.aspx" />
+    <Content Include="Views\business.account.aspx" />
+    <Content Include="Views\business.account.notification.aspx" />
+    <Content Include="Views\business.account.portfolio.aspx" />
+    <Content Include="Views\business.account.settings.aspx" />
+    <Content Include="Views\content.reader.aspx" />
+    <Content Include="Views\advertise.aspx" />
+    <Content Include="Views\contactus.successful.aspx" />
+    <Content Include="Views\password.update.aspx" />
+    <Content Include="Views\password.recovery.code.aspx" />
+    <Content Include="Views\password.recovery.mail.success.aspx" />
+    <Content Include="Views\error.aspx" />
+    <Content Include="Views\page404.pwd.productkey.aspx" />
+    <Content Include="Views\page404.productkey.aspx" />
+    <Content Include="Views\page404.activate.success.aspx" />
+    <Content Include="Views\page404.deactivate.success.aspx" />
+    <Content Include="Views\page404.choosepassword.aspx" />
+    <Content Include="Views\page404.password.aspx" />
+    <Content Include="Views\page404.aspx" />
+    <Content Include="Views\nopage.aspx" />
+    <Content Include="Views\locator.aspx" />
+    <Content Include="Views\newsletter.subscribe.successful.aspx" />
+    <Content Include="Views\forgotpassword.aspx" />
+    <Content Include="Views\password.update.success.aspx" />
+    <Content Include="Views\review.checkout.aspx" />
+    <Content Include="Views\individual.account.notification.aspx" />
+    <Content Include="Views\individual.account.portfolio.aspx" />
+    <Content Include="Views\individual.account.settings.aspx" />
+    <Content Include="Views\individual.account.aspx" />
+    <Content Include="Views\individual.aspx" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.UI.Combined.dll" />
+    <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="bin\DotNetOpenAuth.AspNet.xml" />
+    <Content Include="bin\DotNetOpenAuth.Core.dll" />
+    <Content Include="bin\DotNetOpenAuth.Core.xml" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.xml" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.xml" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.xml" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.xml" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\FindAService_WebForm.dll" />
+    <Content Include="bin\FindAService_WebForm.pdb" />
+    <Content Include="bin\Microsoft.AspNet.Membership.OpenAuth.dll" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="Content\css\layouts\layout.account.style.css" />
+    <Content Include="Content\css\layouts\layout.artisan.master.style.css" />
+    <Content Include="Content\css\layouts\layout.artisan.style.css" />
+    <Content Include="Content\css\layouts\layout.business.style.css" />
+    <Content Include="Content\css\layouts\layout.search.style.css" />
+    <Content Include="Views\business.aspx" />
+    <Content Include="Views\main.aspx" />
+    <Content Include="Views\business.portfolio.aspx" />
+    <Content Include="Scripts\effects.js" />
+    <Content Include="Images\advert_bannr\bannr_1.jpg" />
+    <Content Include="Images\advert_bannr\bannr_10.jpg" />
+    <Content Include="Images\advert_bannr\bannr_11.jpg" />
+    <Content Include="Images\advert_bannr\bannr_2.jpg" />
+    <Content Include="Images\advert_bannr\bannr_3.jpg" />
+    <Content Include="Images\advert_bannr\bannr_4.jpg" />
+    <Content Include="Images\advert_bannr\bannr_5.jpg" />
+    <Content Include="Images\advert_bannr\bannr_6.jpg" />
+    <Content Include="Images\advert_bannr\bannr_7.jpg" />
+    <Content Include="Images\advert_bannr\bannr_8.jpg" />
+    <Content Include="Images\advert_bannr\bannr_9.jpg" />
+    <Content Include="Images\advert_bannr_src\bannr_1.png" />
+    <Content Include="Images\advert_bannr_src\bannr_10.png" />
+    <Content Include="Images\advert_bannr_src\bannr_11.png" />
+    <Content Include="Images\advert_bannr_src\bannr_2.png" />
+    <Content Include="Images\advert_bannr_src\bannr_3.png" />
+    <Content Include="Images\advert_bannr_src\bannr_4.png" />
+    <Content Include="Images\advert_bannr_src\bannr_5.png" />
+    <Content Include="Images\advert_bannr_src\bannr_6.png" />
+    <Content Include="Images\advert_bannr_src\bannr_7.png" />
+    <Content Include="Images\advert_bannr_src\bannr_8.png" />
+    <Content Include="Images\advert_bannr_src\bannr_9.png" />
+    <Content Include="Images\banner\bannr_1.jpg" />
+    <Content Include="Images\banner\bannr_2.jpg" />
+    <Content Include="Images\banner\bannr_3.jpg" />
+    <Content Include="Images\banner\bannr_4.jpg" />
+    <Content Include="Images\banner\bannr_5.jpg" />
+    <Content Include="Images\banner\bannr_6.jpg" />
+    <Content Include="Images\banner\bannr_6.png" />
+    <Content Include="Images\banner_src\bannr_1.jpg" />
+    <Content Include="Images\banner_src\bannr_1.png" />
+    <Content Include="Images\banner_src\bannr_2.png" />
+    <Content Include="Images\banner_src\bannr_3.png" />
+    <Content Include="Images\banner_src\bannr_4.png" />
+    <Content Include="Images\banner_src\bannr_5.png" />
+    <Content Include="Images\banner_src\bannr_6.png" />
+    <Content Include="Images\banner_src\lens.png" />
+    <Content Include="Images\Delete.gif" />
+    <Content Include="Images\devices.png" />
+    <Content Include="Images\devices_src\devices.png" />
+    <Content Include="Images\devices_src\mobile_phone.png" />
+    <Content Include="Images\devices_src\tablet_pc.png" />
+    <Content Include="Images\footr_bannr\bannr_1.png" />
+    <Content Include="Images\footr_bannr\bannr_2.png" />
+    <Content Include="Images\footr_bannr\city_view.png" />
+    <Content Include="Images\footr_bannr_src\bannr_1.png" />
+    <Content Include="Images\footr_bannr_src\bannr_2.png" />
+    <Content Include="Images\footr_bannr_src\city_view.png" />
+    <Content Include="Images\ico\android_store.png" />
+    <Content Include="Images\ico\android_white_24.png" />
+    <Content Include="Images\ico\apple_store.png" />
+    <Content Include="Images\ico\apple_white_24.png" />
+    <Content Include="Images\ico\bberry_white_24.png" />
+    <Content Include="Images\ico\blackberry_store.png" />
+    <Content Include="Images\ico\contact_white_24.png" />
+    <Content Include="Images\ico\email_white_24.png" />
+    <Content Include="Images\ico\fb.png" />
+    <Content Include="Images\ico\fb_white.png" />
+    <Content Include="Images\ico\gp.png" />
+    <Content Include="Images\ico\gp_white.png" />
+    <Content Include="Images\ico\hwitwrks_128_1.png" />
+    <Content Include="Images\ico\hwitwrks_128_2.png" />
+    <Content Include="Images\ico\hwitwrks_128_3.png" />
+    <Content Include="Images\ico\in.png" />
+    <Content Include="Images\ico\in_white.png" />
+    <Content Include="Images\ico\loc.png" />
+    <Content Include="Images\ico\location.png" />
+    <Content Include="Images\ico\phone_white_24.png" />
+    <Content Include="Images\ico\srch_16.png" />
+    <Content Include="Images\ico\srch_20.jpg" />
+    <Content Include="Images\ico\srch_20.png" />
+    <Content Include="Images\ico\tw.png" />
+    <Content Include="Images\ico\tw_white.png" />
+    <Content Include="Images\ico\windows_store.png" />
+    <Content Include="Images\ico\windows_white_24.png" />
+    <Content Include="Images\ico_src\android_24.png" />
+    <Content Include="Images\ico_src\android_store.png" />
+    <Content Include="Images\ico_src\android_white.png" />
+    <Content Include="Images\ico_src\android_white_24.png" />
+    <Content Include="Images\ico_src\apple_store.png" />
+    <Content Include="Images\ico_src\apple_white.png" />
+    <Content Include="Images\ico_src\apple_white_24.png" />
+    <Content Include="Images\ico_src\bberry_white.png" />
+    <Content Include="Images\ico_src\bberry_white_24.png" />
+    <Content Include="Images\ico_src\bbery_white.png" />
+    <Content Include="Images\ico_src\bbery_white_24.png" />
+    <Content Include="Images\ico_src\blackberry_store.png" />
+    <Content Include="Images\ico_src\contact_white_24.png" />
+    <Content Include="Images\ico_src\email_white.png" />
+    <Content Include="Images\ico_src\email_white_24.png" />
+    <Content Include="Images\ico_src\fb.png" />
+    <Content Include="Images\ico_src\fb_white.png" />
+    <Content Include="Images\ico_src\gp.png" />
+    <Content Include="Images\ico_src\gp_white.png" />
+    <Content Include="Images\ico_src\in.png" />
+    <Content Include="Images\ico_src\in_white.png" />
+    <Content Include="Images\ico_src\loc.png" />
+    <Content Include="Images\ico_src\location.png" />
+    <Content Include="Images\ico_src\loc_128.png" />
+    <Content Include="Images\ico_src\phone_white.png" />
+    <Content Include="Images\ico_src\phone_white_24.png" />
+    <Content Include="Images\ico_src\srch_16.png" />
+    <Content Include="Images\ico_src\srch_20.png" />
+    <Content Include="Images\ico_src\tw.png" />
+    <Content Include="Images\ico_src\tw_white.png" />
+    <Content Include="Images\ico_src\windows_store.png" />
+    <Content Include="Images\ico_src\windows_white.png" />
+    <Content Include="Images\ico_src\windows_white_24.png" />
+    <Content Include="Images\map.jpg" />
+    <Content Include="Images\site-logo-1-smll.png" />
+    <Content Include="Images\site-logo-1.png" />
+    <Content Include="Images\site-logo.png" />
+    <Content Include="Images\srch_16.png" />
+    <Content Include="Images\src\site-logo-1-smll.png" />
+    <Content Include="Images\src\site-logo-1.png" />
+    <Content Include="Images\src\site-logo-2.png" />
+    <Content Include="Images\src\site-logo-3.png" />
+    <Content Include="Images\src\site-logo.png" />
+    <Content Include="Images\src\Untitled-1.png" />
+    <Content Include="Images\src\Untitled-4.png" />
+    <Content Include="Images\src\Untitled-5.png" />
+    <Content Include="Images\testimon_1.jpg" />
+    <Content Include="Images\testimon_2.jpg" />
+    <Content Include="Views\individual.portfolio.aspx" />
+    <Content Include="Images\activePix.png" />
+    <Content Include="Content\css\widgets\banner.style.css" />
+    <Content Include="Content\css\layouts\layout.login.style.css" />
+    <Content Include="Content\css\vendors\font.style.css" />
+    <Content Include="Content\css\widgets\form.element.style.css" />
+    <Content Include="Content\css\layouts\layout.home.style.css" />
+    <Content Include="Content\css\layouts\layout.master.style.css" />
+    <Content Include="Content\css\layouts\layout.signup.style.css" />
+    <Content Include="Content\css\layouts\layout.style.css" />
+    <Content Include="Fonts\OpenSans-Bold.svg" />
+    <Content Include="Fonts\OpenSans-Light.svg" />
+    <Content Include="Fonts\OpenSans-Regular.svg" />
+    <Content Include="Fonts\raleway_thin.svg" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Views\searchresult.aspx" />
+    <Content Include="Views\login.aspx" />
+    <Content Include="obj\Debug\FindAService_WebForm.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\FindAService_WebForm.dll" />
+    <Content Include="obj\Debug\FindAService_WebForm.pdb" />
+    <Content Include="packages.config" />
+    <Content Include="Fonts\OpenSans-Bold.eot" />
+    <Content Include="Fonts\OpenSans-Bold.ttf" />
+    <Content Include="Fonts\OpenSans-Bold.woff" />
+    <Content Include="Fonts\OpenSans-Light.eot" />
+    <Content Include="Fonts\OpenSans-Light.ttf" />
+    <Content Include="Fonts\OpenSans-Light.woff" />
+    <Content Include="Fonts\OpenSans-Regular.eot" />
+    <Content Include="Fonts\OpenSans-Regular.ttf" />
+    <Content Include="Fonts\OpenSans-Regular.woff" />
+    <Content Include="Fonts\OpenSans-Semibold.eot" />
+    <Content Include="Fonts\OpenSans-Semibold.ttf" />
+    <Content Include="Fonts\OpenSans-Semibold.woff" />
+    <Content Include="Fonts\raleway_thin.eot" />
+    <Content Include="Fonts\raleway_thin.ttf" />
+    <Content Include="Fonts\raleway_thin.woff" />
+    <Content Include="Scripts\prototype.js" />
+    <Content Include="Scripts\artisan.portfolio.script.js" />
+    <Content Include="Scripts\artisan.script.js" />
+    <Content Include="Scripts\business.portfolio.script.js" />
+    <Content Include="Scripts\business.script.js" />
+    <Content Include="Scripts\initializer.adsbanner.script.js" />
+    <Content Include="Scripts\home.search.script.js" />
+    <Content Include="Scripts\initializer.banner.script.js" />
+    <Content Include="Scripts\initializer.script.js" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\FindAService_WebForm.csprojResolveAssemblyReference.cache" />
+    <Content Include="Images\advert_bannr\Thumbs.db" />
+    <Content Include="Images\advert_bannr_src\Thumbs.db" />
+    <Content Include="Images\banner\Thumbs.db" />
+    <Content Include="Images\banner_src\Thumbs.db" />
+    <Content Include="Images\devices_src\Thumbs.db" />
+    <Content Include="Images\footr_bannr\Thumbs.db" />
+    <Content Include="Images\footr_bannr_src\Thumbs.db" />
+    <Content Include="Images\ico\Thumbs.db" />
+    <Content Include="Images\ico_src\Thumbs.db" />
+    <Content Include="Images\src\Thumbs.db" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="Views\Shared\BusinessPage.Master" />
+    <Content Include="Views\Shared\IndividualPage.Master" />
+    <Content Include="Views\Shared\Search.Master" />
+    <EntityDeploy Include="FASDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FASDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="FASDBModel.edmx.diagram">
+      <DependentUpon>FASDBModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\OpenSans-Bold.eot" />
+    <Content Include="Content\fonts\OpenSans-Bold.ttf" />
+    <Content Include="Content\fonts\OpenSans-Bold.woff" />
+    <Content Include="Content\fonts\OpenSans-Light.eot" />
+    <Content Include="Content\fonts\OpenSans-Light.ttf" />
+    <Content Include="Content\fonts\OpenSans-Light.woff" />
+    <Content Include="Content\fonts\OpenSans-Regular.eot" />
+    <Content Include="Content\fonts\OpenSans-Regular.ttf" />
+    <Content Include="Content\fonts\OpenSans-Regular.woff" />
+    <Content Include="Content\fonts\OpenSans-Semibold.eot" />
+    <Content Include="Content\fonts\OpenSans-Semibold.ttf" />
+    <Content Include="Content\fonts\OpenSans-Semibold.woff" />
+    <Content Include="Content\fonts\raleway_thin.eot" />
+    <Content Include="Content\fonts\raleway_thin.ttf" />
+    <Content Include="Content\fonts\raleway_thin.woff" />
+    <Content Include="Scripts\login.script.js" />
+    <Content Include="Scripts\prototype.script.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\signup.script.js" />
+    <Content Include="Views\signup.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountListing.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountListingPackage.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ad.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdsCampaign.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdsCampaignBanner.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdsHistory.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdsPackage.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BlogPost.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BlogPostMedia.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessCategory.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Content.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContentCategory.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContentImage.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AdsController.cs" />
+    <Compile Include="Controllers\BlogPostController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\LicenseCypherController.cs" />
+    <Compile Include="Controllers\MessagingController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
+    <Compile Include="Controllers\ImageUploadController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
+    <Compile Include="Controllers\OziomaApiImpl.cs" />
+    <Compile Include="Controllers\PagingController.cs" />
+    <Compile Include="Controllers\UtilController.cs" />
+    <Compile Include="Country.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="Controllers\BusinessCategoryController.cs" />
+    <Compile Include="DataAccessLayer\FASDALContext.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\LambdaComparer.cs" />
+    <Compile Include="Extensions\LINQExtensions.cs" />
+    <Compile Include="FASDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FASDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FASDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FASDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FASDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AdsCampaignBannerController.cs" />
+    <Compile Include="Controllers\AdsFeaturedController.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="Controllers\BusinessUserController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\UserAuthenticationController.cs" />
+    <Compile Include="Models\EmailMessage.cs" />
+    <Compile Include="Models\Paginator.cs" />
+    <Compile Include="Models\ShortMessage.cs" />
+    <Compile Include="Models\UserAddrLocation.cs" />
+    <Compile Include="NewsletterSubscriber.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="State.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserAuthentication.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserBusiness.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserClient.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserComment.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserComplaint.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserEducationalQualification.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserIndividual.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserJobBoxNotification.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserJobBoxNotificationStatu.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserPortfolioItem.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRating.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserSolution.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserWorkExperience.cs">
+      <DependentUpon>FASDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Views\blogpost.aspx.cs">
+      <DependentUpon>blogpost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\blogpost.aspx.designer.cs">
+      <DependentUpon>blogpost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\business.account.aspx.cs">
+      <DependentUpon>business.account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\business.account.aspx.designer.cs">
+      <DependentUpon>business.account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\business.account.notification.aspx.cs">
+      <DependentUpon>business.account.notification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\business.account.notification.aspx.designer.cs">
+      <DependentUpon>business.account.notification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\business.account.portfolio.aspx.cs">
+      <DependentUpon>business.account.portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\business.account.portfolio.aspx.designer.cs">
+      <DependentUpon>business.account.portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\business.account.settings.aspx.cs">
+      <DependentUpon>business.account.settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\business.account.settings.aspx.designer.cs">
+      <DependentUpon>business.account.settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\content.reader.aspx.cs">
+      <DependentUpon>content.reader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\content.reader.aspx.designer.cs">
+      <DependentUpon>content.reader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\advertise.aspx.cs">
+      <DependentUpon>advertise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\advertise.aspx.designer.cs">
+      <DependentUpon>advertise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\contactus.successful.aspx.cs">
+      <DependentUpon>contactus.successful.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\contactus.successful.aspx.designer.cs">
+      <DependentUpon>contactus.successful.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\password.update.aspx.cs">
+      <DependentUpon>password.update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\password.update.aspx.designer.cs">
+      <DependentUpon>password.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\password.recovery.code.aspx.cs">
+      <DependentUpon>password.recovery.code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\password.recovery.code.aspx.designer.cs">
+      <DependentUpon>password.recovery.code.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\password.recovery.mail.success.aspx.cs">
+      <DependentUpon>password.recovery.mail.success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\password.recovery.mail.success.aspx.designer.cs">
+      <DependentUpon>password.recovery.mail.success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\page404.pwd.productkey.aspx.cs">
+      <DependentUpon>page404.pwd.productkey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\page404.pwd.productkey.aspx.designer.cs">
+      <DependentUpon>page404.pwd.productkey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\page404.productkey.aspx.cs">
+      <DependentUpon>page404.productkey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\page404.productkey.aspx.designer.cs">
+      <DependentUpon>page404.productkey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\page404.activate.success.aspx.cs">
+      <DependentUpon>page404.activate.success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\page404.activate.success.aspx.designer.cs">
+      <DependentUpon>page404.activate.success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\page404.deactivate.success.aspx.cs">
+      <DependentUpon>page404.deactivate.success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\page404.deactivate.success.aspx.designer.cs">
+      <DependentUpon>page404.deactivate.success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\page404.choosepassword.aspx.cs">
+      <DependentUpon>page404.choosepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\page404.choosepassword.aspx.designer.cs">
+      <DependentUpon>page404.choosepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\page404.password.aspx.cs">
+      <DependentUpon>page404.password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\page404.password.aspx.designer.cs">
+      <DependentUpon>page404.password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\page404.aspx.cs">
+      <DependentUpon>page404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\page404.aspx.designer.cs">
+      <DependentUpon>page404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nopage.aspx.cs">
+      <DependentUpon>nopage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\nopage.aspx.designer.cs">
+      <DependentUpon>nopage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\locator.aspx.cs">
+      <DependentUpon>locator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\locator.aspx.designer.cs">
+      <DependentUpon>locator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\newsletter.subscribe.successful.aspx.cs">
+      <DependentUpon>newsletter.subscribe.successful.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\newsletter.subscribe.successful.aspx.designer.cs">
+      <DependentUpon>newsletter.subscribe.successful.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\forgotpassword.aspx.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\forgotpassword.aspx.designer.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\password.update.success.aspx.cs">
+      <DependentUpon>password.update.success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\password.update.success.aspx.designer.cs">
+      <DependentUpon>password.update.success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\review.checkout.aspx.cs">
+      <DependentUpon>review.checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\review.checkout.aspx.designer.cs">
+      <DependentUpon>review.checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\individual.account.notification.aspx.cs">
+      <DependentUpon>individual.account.notification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\individual.account.notification.aspx.designer.cs">
+      <DependentUpon>individual.account.notification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\individual.account.portfolio.aspx.cs">
+      <DependentUpon>individual.account.portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\individual.account.portfolio.aspx.designer.cs">
+      <DependentUpon>individual.account.portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\individual.account.settings.aspx.cs">
+      <DependentUpon>individual.account.settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\individual.account.settings.aspx.designer.cs">
+      <DependentUpon>individual.account.settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\individual.account.aspx.cs">
+      <DependentUpon>individual.account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\individual.account.aspx.designer.cs">
+      <DependentUpon>individual.account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\individual.aspx.cs">
+      <DependentUpon>individual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\individual.aspx.designer.cs">
+      <DependentUpon>individual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\BlogPostPage.Master.cs">
+      <DependentUpon>BlogPostPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\BlogPostPage.Master.designer.cs">
+      <DependentUpon>BlogPostPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\BusinessAccountPage.Master.cs">
+      <DependentUpon>BusinessAccountPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\BusinessAccountPage.Master.designer.cs">
+      <DependentUpon>BusinessAccountPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\BusinessAccountSettingsPage.Master.cs">
+      <DependentUpon>BusinessAccountSettingsPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\BusinessAccountSettingsPage.Master.designer.cs">
+      <DependentUpon>BusinessAccountSettingsPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\ContentReaderPage.Master.cs">
+      <DependentUpon>ContentReaderPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\ContentReaderPage.Master.designer.cs">
+      <DependentUpon>ContentReaderPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Page404.Master.cs">
+      <DependentUpon>Page404.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Page404.Master.designer.cs">
+      <DependentUpon>Page404.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\IndividualAccountPage.Master.cs">
+      <DependentUpon>IndividualAccountPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\IndividualAccountPage.Master.designer.cs">
+      <DependentUpon>IndividualAccountPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\IndividualAccountSettingsPage.Master.cs">
+      <DependentUpon>IndividualAccountSettingsPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\IndividualAccountSettingsPage.Master.designer.cs">
+      <DependentUpon>IndividualAccountSettingsPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\IndividualPage.Master.cs">
+      <DependentUpon>IndividualPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\IndividualPage.Master.designer.cs">
+      <DependentUpon>IndividualPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Search.Master.cs">
+      <DependentUpon>Search.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Search.Master.designer.cs">
+      <DependentUpon>Search.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\business.aspx.cs">
+      <DependentUpon>business.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\business.aspx.designer.cs">
+      <DependentUpon>business.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\BusinessPage.Master.cs">
+      <DependentUpon>BusinessPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\BusinessPage.Master.designer.cs">
+      <DependentUpon>BusinessPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\IndividualUserController.cs" />
+    <Compile Include="Views\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\business.portfolio.aspx.cs">
+      <DependentUpon>business.portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\business.portfolio.aspx.designer.cs">
+      <DependentUpon>business.portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\individual.portfolio.aspx.cs">
+      <DependentUpon>individual.portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\individual.portfolio.aspx.designer.cs">
+      <DependentUpon>individual.portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\AuthPage.Master.cs">
+      <DependentUpon>AuthPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\AuthPage.Master.designer.cs">
+      <DependentUpon>AuthPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\searchresult.aspx.cs">
+      <DependentUpon>searchresult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\searchresult.aspx.designer.cs">
+      <DependentUpon>searchresult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\MemberAccountPage.Master.cs">
+      <DependentUpon>MemberAccountPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\MemberAccountPage.Master.designer.cs">
+      <DependentUpon>MemberAccountPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Shared\Register.Master.cs">
+      <DependentUpon>Register.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Register.Master.designer.cs">
+      <DependentUpon>Register.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\css\license\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\AuthPage.Master" />
+    <Content Include="Views\Shared\MemberAccountPage.Master" />
+    <Content Include="Views\Shared\Register.Master" />
+    <Content Include="Views\Shared\IndividualAccountSettingsPage.Master" />
+    <Content Include="Views\Shared\IndividualAccountPage.Master" />
+    <Content Include="Views\Shared\BusinessAccountPage.Master" />
+    <Content Include="Views\Shared\BusinessAccountSettingsPage.Master" />
+    <Content Include="Views\Shared\ContentReaderPage.Master" />
+    <Content Include="Views\Shared\Page404.Master" />
+    <Content Include="Views\Shared\BlogPostPage.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53412</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20514/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

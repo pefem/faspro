@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cfebc43a112343fd87a458fb44d46aa8" Name="Diagram1" ZoomLevel="95">
+        <EntityTypeShape EntityType="FASDBModel.AccountListingPackage" Width="1.5" PointX="6.125" PointY="29.25" />
+        <EntityTypeShape EntityType="FASDBModel.AccountListing" Width="1.5" PointX="0.5" PointY="2.375" />
+        <EntityTypeShape EntityType="FASDBModel.Admin" Width="1.5" PointX="0.46090439355974289" PointY="21.316938857229864" />
+        <EntityTypeShape EntityType="FASDBModel.Ad" Width="1.5" PointX="5.125" PointY="20.375" />
+        <EntityTypeShape EntityType="FASDBModel.AdsCampaignBanner" Width="1.5" PointX="9.75" PointY="21.75" />
+        <EntityTypeShape EntityType="FASDBModel.AdsCampaign" Width="1.5" PointX="8.00175630673848" PointY="16.227188609646255" />
+        <EntityTypeShape EntityType="FASDBModel.AdsHistory" Width="1.5" PointX="4.6122637654711784" PointY="6.9453694554722727" />
+        <EntityTypeShape EntityType="FASDBModel.AdsPackage" Width="1.5" PointX="4.25" PointY="29.875" />
+        <EntityTypeShape EntityType="FASDBModel.BlogPostMedia" Width="1.5" PointX="0.5" PointY="29.125" />
+        <EntityTypeShape EntityType="FASDBModel.BlogPost" Width="1.5" PointX="6.7249421583139073" PointY="1.4731724865143991" />
+        <EntityTypeShape EntityType="FASDBModel.BusinessCategory" Width="1.5" PointX="11.33828108168127" PointY="30.141655533640485" />
+        <EntityTypeShape EntityType="FASDBModel.City" Width="1.5" PointX="9.25" PointY="27.625" />
+        <EntityTypeShape EntityType="FASDBModel.Contact" Width="1.5" PointX="0.5" PointY="10.375" />
+        <EntityTypeShape EntityType="FASDBModel.ContentCategory" Width="1.5" PointX="2.75" PointY="5.625" />
+        <EntityTypeShape EntityType="FASDBModel.ContentImage" Width="1.5" PointX="0.23278843436054347" PointY="31.8203913568614" />
+        <EntityTypeShape EntityType="FASDBModel.Content" Width="1.5" PointX="3.3352170583490364" PointY="17.041721292325164" />
+        <EntityTypeShape EntityType="FASDBModel.Country" Width="1.5" PointX="2.75" PointY="8.25" />
+        <EntityTypeShape EntityType="FASDBModel.NewsletterSubscriber" Width="1.5" PointX="11.803197277618198" PointY="23.989967700089313" />
+        <EntityTypeShape EntityType="FASDBModel.Service" Width="1.5" PointX="5.25" PointY="17.875" />
+        <EntityTypeShape EntityType="FASDBModel.State" Width="1.5" PointX="7" PointY="24.625" />
+        <EntityTypeShape EntityType="FASDBModel.UserAuthentication" Width="1.5" PointX="5.375" PointY="10.375" />
+        <EntityTypeShape EntityType="FASDBModel.UserBusiness" Width="1.5" PointX="4.625" PointY="1.25" />
+        <EntityTypeShape EntityType="FASDBModel.UserClient" Width="1.5" PointX="0.2441777588073992" PointY="5.9148466912633024" />
+        <EntityTypeShape EntityType="FASDBModel.UserComment" Width="1.5" PointX="8.7096654962327644" PointY="6.6114970774443345" />
+        <EntityTypeShape EntityType="FASDBModel.UserComplaint" Width="1.5" PointX="8.75" PointY="9.25" />
+        <EntityTypeShape EntityType="FASDBModel.UserEducationalQualification" Width="1.5" PointX="5.1304251240242387" PointY="26.674475712084433" />
+        <EntityTypeShape EntityType="FASDBModel.UserIndividual" Width="1.5" PointX="8" PointY="31" />
+        <EntityTypeShape EntityType="FASDBModel.UserJobBoxNotification" Width="1.5" PointX="5.75" PointY="14" />
+        <EntityTypeShape EntityType="FASDBModel.UserJobBoxNotificationStatu" Width="1.5" PointX="0.5" PointY="8.125" />
+        <EntityTypeShape EntityType="FASDBModel.UserPortfolioItem" Width="1.5" PointX="9.7865319092695291" PointY="23.838953163399804" />
+        <EntityTypeShape EntityType="FASDBModel.UserRating" Width="1.5" PointX="7" PointY="19.375" />
+        <EntityTypeShape EntityType="FASDBModel.UserSolution" Width="1.5" PointX="2.875" PointY="22" />
+        <EntityTypeShape EntityType="FASDBModel.UserWorkExperience" Width="1.5" PointX="2.75" PointY="2.75" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_AccountListings_dbo_AccountListingPackages_AccountListingPackage_ID" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_AccountListings_dbo_UserIndividuals_User_ID" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_Ads_dbo_AdsPackages_AdsPackage_ID" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_AdsCampaigns_dbo_Ads_Ads_ID" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_AdsCampaignBanners_dbo_AdsCampaigns_AdsCampaign_ID" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_BlogPostMedias_dbo_BlogPosts_BlogPost_ID" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_Cities_dbo_States_State_ID" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_Contents_dbo_ContentCategories_Category_ID" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_ContentImages_dbo_Contents_Content_ID" />
+        <AssociationConnector Association="FASDBModel.FK_dbo_States_dbo_Countries_Country_ID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,26 @@
+/* CSS Document */
+
+@font-face {
+	font-family:"Raleway Thin";
+	src:url("../../fonts/raleway_thin.eot?") format("eot"),url("../../fonts/raleway_thin.woff") format("woff"),url("../../fonts/raleway_thin.ttf") format("truetype"),url("raleway_thin.svg#Raleway-Thin") format("svg");
+}
+
+@font-face {
+	font-family:"Open Sans Light";
+	src:url("../../fonts/OpenSans-Light.eot?") format("eot"),url("../../fonts/OpenSans-Light.woff") format("woff"),url("../../fonts/OpenSans-Light.ttf") format("truetype"),url("OpenSans-Light.svg#OpenSans-Light") format("svg");
+}
+
+@font-face {
+	font-family:"Open Sans Regular";
+	src:url("../../fonts/OpenSans-Regular.eot?") format("eot"),url("../../fonts/OpenSans-Regular.woff") format("woff"),url("../../fonts/OpenSans-Regular.ttf") format("truetype"),url("/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+}
+
+@font-face {
+	font-family:"Open Sans Semibold";
+	src:url("../../fonts/OpenSans-Semibold.eot?") format("eot"),url("../../fonts/OpenSans-Semibold.woff") format("woff"),url("../../fonts/OpenSans-Semibold.ttf") format("truetype"),url("OpenSans-Semibold.svg#OpenSans-Semibold") format("svg");
+}
+
+@font-face {
+	font-family:"Open Sans Bold";
+	src:url("../../fonts/OpenSans-Bold.eot?") format("eot"),url("../../fonts/OpenSans-Bold.woff") format("woff"),url("../../fonts/OpenSans-Bold.ttf") format("truetype"),url("OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+}

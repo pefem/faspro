@@ -1,0 +1,423 @@
+﻿
+div[pane-obj=selection-view] {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+}
+
+    div[pane-obj=selection-view] div[view-obj=hdr] {
+        position: relative;
+        overflow: hidden;
+        max-height:200px;
+        padding: 50px 0px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=hdr]:before {
+        position: absolute;
+        top:0px;
+        left:0px;
+        bottom:0px;
+        right:0px;
+
+        z-index:0;
+        content:'';
+    }
+
+    div[pane-obj=selection-view] div[view-obj=hdr] div[hdr-obj=lft-pane] {
+        position: relative;
+        width:500px;
+        padding: 0px 40px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=title] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 20px 0px;
+        font-family: 'Open Sans Light';
+        font-size: 36px;
+        text-align:left;
+        text-shadow:rgba(255, 255, 255, 1) 1px 1px 10px;
+        line-height:30px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=description] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 20px 0px;
+        font-family: 'Open Sans Light';
+        font-size: 16px;
+        text-align:left;
+        line-height:29px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=article] {
+        position: relative;
+        overflow: hidden;
+        margin: 30px 10em;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table-hdr] {
+        position: relative;
+        overflow: hidden;
+        margin: 30px auto 10px auto;
+        font-family: 'Open Sans Light';
+        font-size: 32px;
+        text-align:center;
+
+        width:845px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table-hint] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px auto 30px auto;
+        font-family: 'Open Sans Regular';
+        font-size: 16px;
+        text-align:center;
+
+        width:763px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px auto 80px auto;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+
+        width:846px;
+
+        border: 1px none;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] {
+        position: relative;
+        float:left;
+        overflow: hidden;
+        margin: 0px 1px 0px 1px;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+
+        width:280px;
+        text-align:center;
+
+        border: 1px none;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=hdr] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px;
+
+        padding:20px 0px;
+        background:rgba(240, 240, 240, 1);
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=hdr] div[hdr-obj=title] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px;
+        font-family: 'Open Sans Light';
+        font-size: 23px;
+
+        padding:0px 0px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=hdr] div[hdr-obj=description] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px;
+        font-family: 'Open Sans Semibold';
+        font-size: 16px;
+        line-height:21px;
+
+        padding:0px 0px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=bdy] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px;
+
+        padding:20px 0px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=bdy] div[bdy-obj=itm] {
+        position: relative;
+        overflow: hidden;
+        padding:10px 0px;
+        font-family: 'Open Sans Regular';
+        font-size: 16px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=bdy] div[bdy-obj=btn] {
+        position: relative;
+        overflow: hidden;
+        padding:8px 0px;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+
+        width: 160px;
+        margin:90px auto;
+
+        background:rgba(0, 148, 255, 1);
+        border-radius:3px;
+        color:#FFF;
+        cursor:pointer;
+    }
+
+
+/*div[mnu-lst] {
+    border: 1px none;
+}
+
+    div[mnu-lst] ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        div[mnu-lst] ul li {
+            padding: 10px;
+            border-bottom: 1px solid #DDD;
+            font-size: 14px;
+            font-family: 'Open Sans Regular';
+        }
+
+            div[mnu-lst] ul li a {
+                text-decoration: none;
+                color: rgba(0, 148, 255, 1);
+            }
+
+            div[mnu-lst] ul li[selected] {
+                font-size: 14px;
+                font-family: 'Open Sans Semibold';
+            }
+
+                div[mnu-lst] ul li[selected] a {
+                    text-decoration: none;
+                    color: rgba(2, 2, 2, 1);
+                }
+
+            div[mnu-lst] ul li:last-of-type {
+                border-bottom: none;
+            }*/
+
+
+div[layout-obj=reader] div[reader-obj=hint] {
+    margin: 30px auto;
+    padding: 0px;
+    list-style: none;
+    font-size: 14px;
+    font-family: 'Open Sans Regular';
+    line-height: 21px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hide_form {
+    display: none;
+}
+
+.spacer {
+    margin: 0px 0px 30px 0px !important;
+}
+
+
+
+
+
+@media screen and (max-device-width:640px) {
+    @-webkit-viewport {
+        width: 320px;
+    }
+
+    @-moz-viewport {
+        width: 320px;
+    }
+
+    @-ms-viewport {
+        width: 320px;
+    }
+
+    @-o-viewport {
+        width: 320px;
+    }
+
+    
+
+    div[pane-obj=selection-view] {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+}
+
+    div[pane-obj=selection-view] div[view-obj=hdr] {
+        position: relative;
+        overflow: hidden;
+        max-height:200px;
+        padding: 50px 0px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=hdr]:before {
+        position: absolute;
+        top:0px;
+        left:0px;
+        bottom:0px;
+        right:0px;
+
+        z-index:0;
+        content:'';
+    }
+
+    div[pane-obj=selection-view] div[view-obj=hdr] div[hdr-obj=lft-pane] {
+        position: relative;
+        width:500px;
+        padding: 0px 40px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=title] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 20px 0px;
+        font-family: 'Open Sans Light';
+        font-size: 36px;
+        text-align:left;
+        text-shadow:rgba(255, 255, 255, 1) 1px 1px 10px;
+        line-height:30px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=description] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 20px 0px;
+        font-family: 'Open Sans Light';
+        font-size: 16px;
+        text-align:left;
+        line-height:29px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=article] {
+        position: relative;
+        overflow: hidden;
+        margin: 30px 10em;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table-hdr] {
+        position: relative;
+        overflow: hidden;
+        margin: 30px auto 10px auto;
+        font-family: 'Open Sans Light';
+        font-size: 32px;
+        text-align: center;
+
+        width: auto;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table-hint] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px auto 30px auto;
+        font-family: 'Open Sans Regular';
+        font-size: 16px;
+        text-align: center;
+
+        width: auto;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px auto 80px auto;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+
+        width: auto;
+
+        border: 1px none;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] {
+        position: relative;
+        float: none;
+        overflow: hidden;
+        margin: 0px auto;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+
+        width: 280px;
+        text-align: center;
+
+        border: 1px none;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=hdr] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px;
+
+        padding:20px 0px;
+        background:rgba(240, 240, 240, 1);
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=hdr] div[hdr-obj=title] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px;
+        font-family: 'Open Sans Light';
+        font-size: 23px;
+
+        padding:0px 0px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=hdr] div[hdr-obj=description] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px;
+        font-family: 'Open Sans Semibold';
+        font-size: 16px;
+        line-height:21px;
+
+        padding:0px 0px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=bdy] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px;
+
+        padding:20px 0px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=bdy] div[bdy-obj=itm] {
+        position: relative;
+        overflow: hidden;
+        padding:10px 0px;
+        font-family: 'Open Sans Regular';
+        font-size: 16px;
+    }
+
+    div[pane-obj=selection-view] div[view-obj=pricing-table] div[pricing-table-obj=itm] div[itm-obj=bdy] div[bdy-obj=btn] {
+        position: relative;
+        overflow: hidden;
+        padding:8px 0px;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+
+        width: 160px;
+        margin:90px auto;
+
+        background:rgba(0, 148, 255, 1);
+        border-radius:3px;
+        color:#FFF;
+        cursor:pointer;
+    }
+
+}

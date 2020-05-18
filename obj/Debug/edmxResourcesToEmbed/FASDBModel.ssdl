@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FASDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="FASDBModelStoreContainer">
+    <EntitySet Name="AccountListingPackages" EntityType="FASDBModel.Store.AccountListingPackages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AccountListings" EntityType="FASDBModel.Store.AccountListings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Admins" EntityType="FASDBModel.Store.Admins" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ads" EntityType="FASDBModel.Store.Ads" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdsCampaignBanners" EntityType="FASDBModel.Store.AdsCampaignBanners" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdsCampaigns" EntityType="FASDBModel.Store.AdsCampaigns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdsHistories" EntityType="FASDBModel.Store.AdsHistories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdsPackages" EntityType="FASDBModel.Store.AdsPackages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BlogPostMedias" EntityType="FASDBModel.Store.BlogPostMedias" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BlogPosts" EntityType="FASDBModel.Store.BlogPosts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BusinessCategories" EntityType="FASDBModel.Store.BusinessCategories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cities" EntityType="FASDBModel.Store.Cities" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contacts" EntityType="FASDBModel.Store.Contacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ContentCategories" EntityType="FASDBModel.Store.ContentCategories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ContentImages" EntityType="FASDBModel.Store.ContentImages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contents" EntityType="FASDBModel.Store.Contents" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Countries" EntityType="FASDBModel.Store.Countries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewsletterSubscribers" EntityType="FASDBModel.Store.NewsletterSubscribers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Services" EntityType="FASDBModel.Store.Services" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="States" EntityType="FASDBModel.Store.States" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserAuthentications" EntityType="FASDBModel.Store.UserAuthentications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserBusinesses" EntityType="FASDBModel.Store.UserBusinesses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserClients" EntityType="FASDBModel.Store.UserClients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserComments" EntityType="FASDBModel.Store.UserComments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserComplaints" EntityType="FASDBModel.Store.UserComplaints" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserEducationalQualifications" EntityType="FASDBModel.Store.UserEducationalQualifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserIndividuals" EntityType="FASDBModel.Store.UserIndividuals" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserJobBoxNotifications" EntityType="FASDBModel.Store.UserJobBoxNotifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserJobBoxNotificationStatus" EntityType="FASDBModel.Store.UserJobBoxNotificationStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserPortfolioItems" EntityType="FASDBModel.Store.UserPortfolioItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserRatings" EntityType="FASDBModel.Store.UserRatings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserSolutions" EntityType="FASDBModel.Store.UserSolutions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserWorkExperiences" EntityType="FASDBModel.Store.UserWorkExperiences" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_dbo_AccountListings_dbo_AccountListingPackages_AccountListingPackage_ID" Association="FASDBModel.Store.FK_dbo_AccountListings_dbo_AccountListingPackages_AccountListingPackage_ID">
+      <End Role="AccountListingPackages" EntitySet="AccountListingPackages" />
+      <End Role="AccountListings" EntitySet="AccountListings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AccountListings_dbo_UserIndividuals_User_ID" Association="FASDBModel.Store.FK_dbo_AccountListings_dbo_UserIndividuals_User_ID">
+      <End Role="UserIndividuals" EntitySet="UserIndividuals" />
+      <End Role="AccountListings" EntitySet="AccountListings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Ads_dbo_AdsPackages_AdsPackage_ID" Association="FASDBModel.Store.FK_dbo_Ads_dbo_AdsPackages_AdsPackage_ID">
+      <End Role="AdsPackages" EntitySet="AdsPackages" />
+      <End Role="Ads" EntitySet="Ads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AdsCampaignBanners_dbo_AdsCampaigns_AdsCampaign_ID" Association="FASDBModel.Store.FK_dbo_AdsCampaignBanners_dbo_AdsCampaigns_AdsCampaign_ID">
+      <End Role="AdsCampaigns" EntitySet="AdsCampaigns" />
+      <End Role="AdsCampaignBanners" EntitySet="AdsCampaignBanners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AdsCampaigns_dbo_Ads_Ads_ID" Association="FASDBModel.Store.FK_dbo_AdsCampaigns_dbo_Ads_Ads_ID">
+      <End Role="Ads" EntitySet="Ads" />
+      <End Role="AdsCampaigns" EntitySet="AdsCampaigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_BlogPostMedias_dbo_BlogPosts_BlogPost_ID" Association="FASDBModel.Store.FK_dbo_BlogPostMedias_dbo_BlogPosts_BlogPost_ID">
+      <End Role="BlogPosts" EntitySet="BlogPosts" />
+      <End Role="BlogPostMedias" EntitySet="BlogPostMedias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Cities_dbo_States_State_ID" Association="FASDBModel.Store.FK_dbo_Cities_dbo_States_State_ID">
+      <End Role="States" EntitySet="States" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ContentImages_dbo_Contents_Content_ID" Association="FASDBModel.Store.FK_dbo_ContentImages_dbo_Contents_Content_ID">
+      <End Role="Contents" EntitySet="Contents" />
+      <End Role="ContentImages" EntitySet="ContentImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Contents_dbo_ContentCategories_Category_ID" Association="FASDBModel.Store.FK_dbo_Contents_dbo_ContentCategories_Category_ID">
+      <End Role="ContentCategories" EntitySet="ContentCategories" />
+      <End Role="Contents" EntitySet="Contents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_States_dbo_Countries_Country_ID" Association="FASDBModel.Store.FK_dbo_States_dbo_Countries_Country_ID">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="States" EntitySet="States" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AccountListingPackages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Amount" Type="float" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Duration" Type="int" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AccountListings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="ReceiptNo" Type="nvarchar(max)" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="User_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="AccountListingPackage_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="FirstName" Type="nvarchar(max)" />
+    <Property Name="LastName" Type="nvarchar(max)" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+    <Property Name="EmailAddress" Type="nvarchar(max)" />
+    <Property Name="ImageUrl" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="Country_ID" Type="nvarchar(max)" />
+    <Property Name="Role" Type="int" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Ads">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="ReceiptNo" Type="nvarchar(max)" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="AdsPackage_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AdsCampaignBanners">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="AdsCampaign_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="ImageUrl" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AdsCampaigns">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Ads_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="URL" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdsHistories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="TicketNo" Type="nvarchar(max)" />
+    <Property Name="Ads_ID" Type="nvarchar(max)" />
+    <Property Name="Task" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="DateExpired" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdsPackages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Amount" Type="float" Nullable="false" />
+    <Property Name="Duration" Type="int" Nullable="false" />
+    <Property Name="NumberOfAds" Type="int" Nullable="false" />
+    <Property Name="NumberOfAdsBanner" Type="int" Nullable="false" />
+    <Property Name="BannerDimension" Type="int" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="BlogPostMedias">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="URL" Type="nvarchar(max)" />
+    <Property Name="BlogPost_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="Author_ID" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="BlogPosts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Article" Type="nvarchar(max)" />
+    <Property Name="MetaDescription" Type="nvarchar(max)" />
+    <Property Name="MetaKeyword" Type="nvarchar(max)" />
+    <Property Name="URL" Type="nvarchar(max)" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="CoverImage" Type="nvarchar(max)" />
+    <Property Name="Author_ID" Type="nvarchar(max)" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="IsPublished" Type="bit" Nullable="false" />
+    <Property Name="IsArchived" Type="bit" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="BusinessCategories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="BusinessCategoryTitle" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="State_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="CityName" Type="nvarchar(max)" />
+    <Property Name="Latitude" Type="nvarchar(max)" />
+    <Property Name="Longitude" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Subject" Type="nvarchar(max)" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="DateSent" Type="datetime" Nullable="false" />
+    <Property Name="Seen" Type="bit" Nullable="false" />
+    <Property Name="Read" Type="bit" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="ContentCategories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="CategoryTitle" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="PageSection" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="ContentImages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="URL" Type="nvarchar(max)" />
+    <Property Name="Content_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Contents">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Body" Type="nvarchar(max)" />
+    <Property Name="MetaTitle" Type="nvarchar(max)" />
+    <Property Name="MetaDescription" Type="nvarchar(max)" />
+    <Property Name="Keyword" Type="nvarchar(max)" />
+    <Property Name="URL" Type="nvarchar(max)" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="CoverImage" Type="nvarchar(max)" />
+    <Property Name="ShowImage" Type="bit" Nullable="false" />
+    <Property Name="SingletonApp" Type="bit" Nullable="false" />
+    <Property Name="Author_ID" Type="nvarchar(max)" />
+    <Property Name="Category_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="PageTemplate" Type="int" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="CountryName" Type="nvarchar(max)" />
+    <Property Name="LocalName" Type="nvarchar(max)" />
+    <Property Name="WebCode" Type="nvarchar(max)" />
+    <Property Name="Region" Type="nvarchar(max)" />
+    <Property Name="Continent" Type="nvarchar(max)" />
+    <Property Name="Latitude" Type="nvarchar(max)" />
+    <Property Name="Longitude" Type="nvarchar(max)" />
+    <Property Name="SurfaceArea" Type="nvarchar(max)" />
+    <Property Name="Population" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="NewsletterSubscribers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="DateSubscribed" Type="datetime" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Services">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="ServiceTitle" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="States">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="StateName" Type="nvarchar(max)" />
+    <Property Name="Country_ID" Type="nvarchar" MaxLength="128" />
+    <Property Name="Latitude" Type="nvarchar(max)" />
+    <Property Name="Longitude" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserAuthentications">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="Salt" Type="nvarchar(max)" />
+    <Property Name="UserType" Type="int" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserBusinesses">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="BusinessCategory_ID" Type="nvarchar(max)" />
+    <Property Name="BusinessName" Type="nvarchar(max)" />
+    <Property Name="BusinessDescription" Type="nvarchar(max)" />
+    <Property Name="Website" Type="nvarchar(max)" />
+    <Property Name="Country_ID" Type="nvarchar(max)" />
+    <Property Name="State_ID" Type="nvarchar(max)" />
+    <Property Name="City_ID" Type="nvarchar(max)" />
+    <Property Name="IsFeatured" Type="bit" Nullable="false" />
+    <Property Name="IsSubscribed" Type="bit" Nullable="false" />
+    <Property Name="IsCertified" Type="bit" Nullable="false" />
+    <Property Name="IsQuarantined" Type="bit" Nullable="false" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="IsAgreedToTerms" Type="bit" Nullable="false" />
+    <Property Name="ContactNumber" Type="nvarchar(max)" />
+    <Property Name="ContactAddress" Type="nvarchar(max)" />
+    <Property Name="ImageUrl" Type="nvarchar(max)" />
+    <Property Name="CoverImageUrl" Type="nvarchar(max)" />
+    <Property Name="RegistrationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserClients">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="Client" Type="nvarchar(max)" />
+    <Property Name="URL" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserComments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="Owner_ID" Type="nvarchar(max)" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+    <Property Name="DatetCommented" Type="datetime" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserComplaints">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="Reason" Type="nvarchar(max)" />
+    <Property Name="DateReported" Type="datetime" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserEducationalQualifications">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="SchoolName" Type="nvarchar(max)" />
+    <Property Name="AwardAcquired" Type="nvarchar(max)" />
+    <Property Name="YearGraduated" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserIndividuals">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="FirstName" Type="nvarchar(max)" />
+    <Property Name="LastName" Type="nvarchar(max)" />
+    <Property Name="Sex" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="ContactAddress" Type="nvarchar(max)" />
+    <Property Name="ContactNumber" Type="nvarchar(max)" />
+    <Property Name="Service_ID" Type="nvarchar(max)" />
+    <Property Name="Country_ID" Type="nvarchar(max)" />
+    <Property Name="State_ID" Type="nvarchar(max)" />
+    <Property Name="City_ID" Type="nvarchar(max)" />
+    <Property Name="ImageUrl" Type="nvarchar(max)" />
+    <Property Name="IsFeatured" Type="bit" Nullable="false" />
+    <Property Name="IsCertified" Type="bit" Nullable="false" />
+    <Property Name="IsQuarantined" Type="bit" Nullable="false" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="IsAgreedToTerms" Type="bit" Nullable="false" />
+    <Property Name="RegistrationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="AboutMe" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserJobBoxNotifications">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Recepient" Type="nvarchar(max)" />
+    <Property Name="RecepientLocation" Type="nvarchar(max)" />
+    <Property Name="Sender" Type="nvarchar(max)" />
+    <Property Name="SenderLocation" Type="nvarchar(max)" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="DateSent" Type="datetime" Nullable="false" />
+    <Property Name="IsGroupMessage" Type="bit" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserJobBoxNotificationStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="Group_ID" Type="nvarchar(max)" />
+    <Property Name="Notification_ID" Type="nvarchar(max)" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserPortfolioItems">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ImageUrl" Type="nvarchar(max)" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserRatings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="Owner_ID" Type="nvarchar(max)" />
+    <Property Name="LastName" Type="nvarchar(max)" />
+    <Property Name="FirstName" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Star1" Type="nvarchar(max)" />
+    <Property Name="Star2" Type="nvarchar(max)" />
+    <Property Name="Star3" Type="nvarchar(max)" />
+    <Property Name="Star4" Type="nvarchar(max)" />
+    <Property Name="Star5" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserSolutions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="UserWorkExperiences">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="User_ID" Type="nvarchar(max)" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Client" Type="nvarchar(max)" />
+    <Property Name="ImageUrl" Type="nvarchar(max)" />
+    <Property Name="DateCompleted" Type="datetime" Nullable="false" />
+    <Property Name="Increment" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <Association Name="FK_dbo_AccountListings_dbo_AccountListingPackages_AccountListingPackage_ID">
+    <End Role="AccountListingPackages" Type="FASDBModel.Store.AccountListingPackages" Multiplicity="0..1" />
+    <End Role="AccountListings" Type="FASDBModel.Store.AccountListings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountListingPackages">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AccountListings">
+        <PropertyRef Name="AccountListingPackage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AccountListings_dbo_UserIndividuals_User_ID">
+    <End Role="UserIndividuals" Type="FASDBModel.Store.UserIndividuals" Multiplicity="0..1" />
+    <End Role="AccountListings" Type="FASDBModel.Store.AccountListings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserIndividuals">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AccountListings">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Ads_dbo_AdsPackages_AdsPackage_ID">
+    <End Role="AdsPackages" Type="FASDBModel.Store.AdsPackages" Multiplicity="0..1" />
+    <End Role="Ads" Type="FASDBModel.Store.Ads" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdsPackages">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Ads">
+        <PropertyRef Name="AdsPackage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AdsCampaignBanners_dbo_AdsCampaigns_AdsCampaign_ID">
+    <End Role="AdsCampaigns" Type="FASDBModel.Store.AdsCampaigns" Multiplicity="0..1" />
+    <End Role="AdsCampaignBanners" Type="FASDBModel.Store.AdsCampaignBanners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdsCampaigns">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AdsCampaignBanners">
+        <PropertyRef Name="AdsCampaign_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AdsCampaigns_dbo_Ads_Ads_ID">
+    <End Role="Ads" Type="FASDBModel.Store.Ads" Multiplicity="0..1" />
+    <End Role="AdsCampaigns" Type="FASDBModel.Store.AdsCampaigns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ads">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AdsCampaigns">
+        <PropertyRef Name="Ads_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_BlogPostMedias_dbo_BlogPosts_BlogPost_ID">
+    <End Role="BlogPosts" Type="FASDBModel.Store.BlogPosts" Multiplicity="0..1" />
+    <End Role="BlogPostMedias" Type="FASDBModel.Store.BlogPostMedias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BlogPosts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BlogPostMedias">
+        <PropertyRef Name="BlogPost_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Cities_dbo_States_State_ID">
+    <End Role="States" Type="FASDBModel.Store.States" Multiplicity="0..1" />
+    <End Role="Cities" Type="FASDBModel.Store.Cities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="States">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="State_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ContentImages_dbo_Contents_Content_ID">
+    <End Role="Contents" Type="FASDBModel.Store.Contents" Multiplicity="0..1" />
+    <End Role="ContentImages" Type="FASDBModel.Store.ContentImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contents">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ContentImages">
+        <PropertyRef Name="Content_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Contents_dbo_ContentCategories_Category_ID">
+    <End Role="ContentCategories" Type="FASDBModel.Store.ContentCategories" Multiplicity="0..1" />
+    <End Role="Contents" Type="FASDBModel.Store.Contents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContentCategories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Contents">
+        <PropertyRef Name="Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_States_dbo_Countries_Country_ID">
+    <End Role="Countries" Type="FASDBModel.Store.Countries" Multiplicity="0..1" />
+    <End Role="States" Type="FASDBModel.Store.States" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="States">
+        <PropertyRef Name="Country_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

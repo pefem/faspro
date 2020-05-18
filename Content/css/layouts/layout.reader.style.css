@@ -1,0 +1,1271 @@
+﻿
+div[layout-obj=reader-headr] {
+    position: relative;
+    overflow: hidden;
+    max-height: 200px;
+    border-bottom: 1px solid #DDD;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 30px 0px;
+}
+
+    div[layout-obj=reader-headr] div[headr-obj=hdr] {
+        position: relative;
+        overflow: hidden;
+        width: 82%;
+        height: 200px;
+        max-width: 1108px;
+        margin: 0px auto;
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding: 20px 0px;
+    }
+
+        div[layout-obj=reader-headr] div[headr-obj=hdr]:before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            z-index: 0;
+            content: '';
+        }
+
+        div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] {
+            position: relative;
+            width: 500px;
+            padding: 0px 0px;
+        }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=title] {
+                position: relative;
+                overflow: hidden;
+                margin: 0px 0px 20px 0px;
+                font-family: 'Open Sans Light';
+                font-size: 36px;
+                text-align: left;
+                text-shadow: rgba(255, 255, 255, 1) 1px 1px 10px;
+                line-height: 45px;
+            }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=description] {
+                position: relative;
+                overflow: hidden;
+                margin: 0px 0px 20px 0px;
+                font-family: 'Open Sans Light';
+                font-size: 16px;
+                text-align: left;
+                line-height: 20px;
+            }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=date-descr] {
+                position: relative;
+                overflow: hidden;
+                margin: 0px 0px 20px 0px;
+                font-family: 'Open Sans Regular';
+                font-size: 13px;
+                text-align: left;
+            }
+
+        div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=rgt-pane] {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 500px;
+            padding: 0px 0px;
+            background: rgba(240, 240, 240, 1);
+        }
+
+        div[layout-obj=reader-headr] div[headr-obj=hdr] div[pane-obj=buttn] {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            overflow: hidden;
+            margin: 0px 0px 20px 0px;
+            font-family: 'Open Sans Light';
+            font-size: 16px;
+            text-align: left;
+            line-height: 29px;
+            width: 190px;
+            height: 60px;
+            border: 1px solid;
+            border-radius: 4px;
+            background-image: url('../../../Images/quickteller.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[pane-obj=buttn] a {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                overflow: hidden;
+            }
+
+
+div[layout-obj=reader-nav] {
+    position: relative;
+    overflow: hidden;
+    margin: 30px auto 0px auto;
+    width: 82%;
+    max-width: 1108px;
+}
+
+    div[layout-obj=reader-nav] div[reader-obj=navigatn] {
+        position: fixed;
+        top: 80px;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0px 0px 40px 0px;
+        padding: 10px 0px 10px 60px;
+        font-size: 12px;
+        font-family: 'Open Sans Regular';
+        border-bottom: 1px solid #DDD;
+        background: #FFF;
+    }
+
+        div[layout-obj=reader-nav] div[reader-obj=navigatn] ul {
+            margin: 0px auto;
+            padding: 0px;
+            list-style: none;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1165px;
+        }
+
+            div[layout-obj=reader-nav] div[reader-obj=navigatn] ul li {
+                float: left;
+            }
+
+
+            
+
+div[layout-obj=reader] {
+    position: relative;
+    overflow: hidden;
+    margin: 30px auto 50px auto;
+    width: 82%;
+    max-width: 1108px;
+}
+
+    div[layout-obj=reader] div[reader-obj=panel] {
+        position: relative;
+        overflow: hidden;
+    }
+
+        div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=left-view] {
+            position: relative;
+            float: left;
+            overflow: hidden;
+            width: 200px;
+            margin: 0px 30px 0px 0px;
+        }
+
+        div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] {
+            position: relative;
+            float: none;
+            overflow: hidden;
+            width: auto;
+        }
+
+            div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] div[view-obj=left-pane] {
+                position: relative;
+                float: none;
+                overflow: hidden;
+                width: auto;
+                margin: 0px 100px 0px 0px;
+            }
+
+            div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] div[view-obj=right-pane] {
+                position: relative;
+                float: right;
+                overflow: hidden;
+                /*width: 300px;*/
+                height: 400px;
+                margin: 0px 0px 0px 30px;
+            }
+
+
+div[pane-obj=content-reader] {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+}
+
+    div[pane-obj=content-reader] div[content-reader-obj=cover] {
+        position: relative;
+        height: 250px;
+        background: rgba(240, 240, 240, 1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0px 0px 20px 0px;
+    }
+
+    div[pane-obj=content-reader] div[content-reader-obj=title] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 20px 0px;
+        font-family: 'Open Sans Semibold';
+        font-size: 32px;
+    }
+
+    div[pane-obj=content-reader] div[content-reader-obj=article] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 0px 0px;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+
+div[cntact-frm] {
+    position: relative;
+    overflow: hidden;
+    margin: 50px 0px 0px 0px;
+    font-family: 'Open Sans Regular';
+    font-size: 14px;
+    line-height: 24px;
+    width: auto;
+}
+
+    div[cntact-frm] div[frm-obj=rw] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 10px 0px;
+        box-sizing: border-box;
+    }
+
+        div[cntact-frm] div[frm-obj=rw] input[type=text] {
+            position: relative;
+            width: 600px;
+            max-width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        div[cntact-frm] div[frm-obj=rw] textarea {
+            position: relative;
+            width: 600px;
+            max-width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            float: left;
+        }
+
+        div[cntact-frm] div[frm-obj=rw] input[type=submit] {
+            padding: 10px;
+            min-height: 44px;
+            font-size: 16px;
+        }
+
+            div[cntact-frm] div[frm-obj=rw] input[type=submit][focusable] {
+                background: rgba(0, 148, 255, 1);
+                color: #FFF;
+            }
+
+
+div[mnu-lst] {
+    border: 1px none;
+}
+
+    div[mnu-lst] ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        div[mnu-lst] ul li {
+            padding: 10px;
+            border-bottom: 1px solid #DDD;
+            font-size: 14px;
+            font-family: 'Open Sans Regular';
+        }
+
+            div[mnu-lst] ul li a {
+                text-decoration: none;
+                color: rgba(0, 148, 255, 1);
+            }
+
+            div[mnu-lst] ul li[selected] {
+                font-size: 14px;
+                font-family: 'Open Sans Semibold';
+            }
+
+                div[mnu-lst] ul li[selected] a {
+                    text-decoration: none;
+                    color: rgba(2, 2, 2, 1);
+                }
+
+            div[mnu-lst] ul li:last-of-type {
+                border-bottom: none;
+            }
+
+
+div[layout-obj=reader] div[reader-obj=hint] {
+    margin: 30px auto;
+    padding: 0px;
+    list-style: none;
+    font-size: 14px;
+    font-family: 'Open Sans Regular';
+    line-height: 21px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hide_form {
+    display: none;
+}
+
+.spacer {
+    margin: 0px 0px 30px 0px !important;
+}
+
+
+
+
+
+
+@media screen and (max-device-width:1024px) {
+
+div[page=layout] div[layout-obj=headr] {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    z-index: 100;
+    height: 80px;
+    background: rgba(30, 30, 30, 1);
+}
+
+    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] {
+        margin: auto;
+        width: auto;
+        max-width: inherit;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 100;
+        padding: 0px 0px 0px 0px;
+        border-bottom: 1px none rgba(255, 255, 255, 1);
+
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flexbox;
+    }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj] {
+                -webkit-box-flex: 1;
+                -moz-box-flex: 1;
+                -ms-flex: 1;
+                -o-flex: 1;
+                flex: 1;
+            }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] {
+            position: relative;
+            margin: auto;
+            width: auto;
+            max-width: 85%;
+        }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] {
+            float: left;
+            position: relative;
+            overflow: hidden;
+            width: 180px;
+        }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] div[left-obj=logo] {
+                font-family: 'Open Sans Semibold';
+                font-size: 45px;
+                color: rgba(255, 255, 255, 1);
+                text-shadow: rgba(0, 0, 0, .3) 2px 2px 10px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: left bottom;
+                margin: 10px 0px 0px 0px;
+                height: 52px;
+            }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] div[wrappr-obj=right] {
+            float: right;
+            position: relative;
+            width: auto;
+        }
+
+            /* Menu List Area*/
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] {
+                padding: 10px 0px 0px 0px;
+                cursor: pointer;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=shape] {
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    width: 23px;
+                    height: 4px;
+                    margin: 0px 0px 0px 10px;
+                    cursor: pointer;
+                    background: rgba(255, 255, 255, 1);
+                    display: none;
+                }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=shape]:before {
+            width: 100%;
+            height: 4px;
+            content: "";
+            background: rgba(255, 255, 255, 1);
+            position: absolute;
+            top: 8px;
+            left: 0px;
+        }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=shape]:after {
+            width: 100%;
+            height: 4px;
+            content: "";
+            background: rgba(255, 255, 255, 1);
+            position: absolute;
+            top: 16px;
+            left: 0px;
+        }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] {
+            padding: 0px 0px;
+            position: relative;
+            white-space: nowrap;
+        }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] {
+                display: inline-block;
+                margin: 0px 0px 0px 0px;
+                padding: 10px 15px 10px 15px;
+                color: rgba(255, 255, 255, 1);
+                position: relative;
+                border: 1px none #fff;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:before {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 1px;
+                    background: rgba(255, 255, 255, 1);
+                    background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                    background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                    background: -ms-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                    background: -o-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                    background: linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:last-of-type::before {
+                    display: none;
+                }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] span {
+                    color: #FFF;
+                }
+
+                    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] span[text] {
+                        color: #FFF;
+                        font-family: 'Open Sans Light';
+                    }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] a {
+                    color: rgba(0, 0, 0, 1);
+                    color: #FFF;
+                    text-decoration: none;
+                }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:hover a {
+                    color: rgba(0, 148, 255, .5);
+                    color: rgba(229, 244, 254, 1);
+                    text-decoration: none;
+                    text-shadow: none;
+                }
+
+
+                
+
+
+    div[layout-obj=reader-nav] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px auto 0px auto;
+        width: auto;
+        max-width: inherit;
+    }
+
+        div[layout-obj=reader-nav] div[reader-obj=navigatn] {
+            overflow: hidden;
+            margin: 0px 0px 0px 0px;
+            padding: 10px 15px 10px 15px;
+            font-size: 12px;
+            font-family: 'Open Sans Regular';
+            border-bottom: 1px solid #DDD;
+            background: #FFF;
+        }
+
+            div[layout-obj=reader-nav] div[reader-obj=navigatn] ul {
+                margin: 0px auto;
+                padding: 0px;
+                list-style: none;
+                overflow: hidden;
+                width: 100%;
+                max-width: 1165px;
+            }
+
+                div[layout-obj=reader-nav] div[reader-obj=navigatn] ul li {
+                    float: left;
+                }
+
+
+
+
+    div[layout-obj=reader] {
+        position: relative;
+        overflow: hidden;
+        margin: 20px 15px 50px 15px;
+        width: auto;
+        max-width: 1108px;
+    }
+
+        div[layout-obj=reader] div[reader-obj=panel] {
+            position: relative;
+            overflow: hidden;
+            margin: 0px 0px;
+        }
+
+                div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] div[view-obj=left-pane] {
+                    position: relative;
+                    float: none;
+                    overflow: hidden;
+                    width: auto;
+                    margin: 0px 0px 0px 0px;
+                }
+
+                div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] div[view-obj=right-pane] {
+                    position: relative;
+                    float: right;
+                    overflow: hidden;
+                    /*width: 300px;*/
+                    height: 400px;
+                    margin: 0px 0px 0px 30px;
+                    display: none;
+                }
+
+
+
+}
+
+@media screen and (max-device-width:760px) {
+    @-webkit-viewport {
+        width: 320px;
+    }
+
+    @-moz-viewport {
+        width: 320px;
+    }
+
+    @-ms-viewport {
+        width: 320px;
+    }
+
+    @-o-viewport {
+        width: 320px;
+    }
+
+    div[page=layout] div[layout-obj=headr] {
+        position: relative;
+        background: rgba(30, 30, 30, 1);
+        height: inherit;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+    }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] {
+            margin: auto;
+            width: auto;
+            max-width: 100%;
+            position: relative;
+            z-index: 100;
+            padding: 0px 0px 0px 0px;
+            border-bottom: 1px none rgba(255, 255, 255, 1);
+            overflow: hidden;
+            display: block;
+        }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] {
+                float: none;
+                position: relative;
+                overflow: hidden;
+                width: 300px;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] div[left-obj=logo] {
+                    height: 60px;
+                    margin: 6px 10px !important;
+                }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] {
+                float: none;
+                position: relative;
+                width: auto;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] {
+                    padding: 10px 0px 0px 0px;
+                    cursor: pointer;
+                }
+
+                    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] {
+                        padding: 0px 0px;
+                        position: relative;
+                        white-space: nowrap;
+                    }
+
+                        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] {
+                            display: block;
+                            margin: 0px 0px 0px 0px;
+                            padding: 10px 15px 10px 15px;
+                            font-size: 17px;
+                            color: rgba(255, 255, 255, 1);
+                            position: relative;
+                            border: 1px none #fff;
+                        }
+
+                            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:before {
+                                content: "";
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                bottom: 0px;
+                                width: 1px;
+                                background: rgba(255, 255, 255, 1);
+                                background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                background: -ms-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                background: -o-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                background: linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                display: none;
+                            }
+
+                            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:last-of-type::before {
+                                display: none;
+                            }
+
+                            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] a {
+                                color: rgba(255, 255, 255, 1);
+                                text-decoration: none;
+                            }
+
+                            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:hover a {
+                                color: rgba(255, 255, 255, 1);
+                                text-decoration: none;
+                                text-shadow: rgba(255, 255, 255, 1) 1px 1px 3px;
+                                text-shadow: rgba(20, 20, 20, .7) 1px 1px 4px;
+                            }
+
+
+
+
+    div[layout-obj=reader-headr] {
+        position: relative;
+        overflow: hidden;
+        max-height: 200px;
+        border-bottom: 1px solid #DDD;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 30px 0px;
+    }
+
+        div[layout-obj=reader-headr] div[headr-obj=hdr] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+            height: 200px;
+            max-width: 1108px;
+            margin: 0px 15px;
+            background-repeat: no-repeat;
+            background-position: top right;
+            padding: 20px 0px;
+        }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr]:before {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                z-index: 0;
+                content: '';
+            }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] {
+                position: relative;
+                width: auto !important;
+                padding: 0px 0px;
+            }
+
+                div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=title] {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0px 0px 20px 0px;
+                    font-family: 'Open Sans Light';
+                    font-size: 36px;
+                    text-align: left;
+                    text-shadow: rgba(255, 255, 255, 1) 1px 1px 10px;
+                    line-height: 45px;
+                }
+
+                div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=description] {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0px 0px 20px 0px;
+                    font-family: 'Open Sans Light';
+                    font-size: 16px;
+                    text-align: left;
+                    line-height: 20px;
+                }
+
+                div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=date-descr] {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0px 0px 20px 0px;
+                    font-family: 'Open Sans Regular';
+                    font-size: 13px;
+                    text-align: left;
+                }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=rgt-pane] {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 500px;
+                padding: 0px 0px;
+                background: rgba(240, 240, 240, 1);
+            }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[pane-obj=buttn] {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                overflow: hidden;
+                margin: 0px 0px 20px 0px;
+                font-family: 'Open Sans Light';
+                font-size: 16px;
+                text-align: left;
+                line-height: 29px;
+                width: 190px;
+                height: 60px;
+                border: 1px solid;
+                border-radius: 4px;
+                background-image: url('../../../Images/quickteller.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+                div[layout-obj=reader-headr] div[headr-obj=hdr] div[pane-obj=buttn] a {
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    overflow: hidden;
+                }
+
+
+    div[layout-obj=reader-nav] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px auto 0px auto;
+        width: 100%;
+        max-width: 1108px;
+    }
+
+        div[layout-obj=reader-nav] div[reader-obj=navigatn] {
+            position: relative;
+            top: inherit;
+            left: inherit;
+            right: inherit;
+            z-index: 1;
+            overflow: hidden;
+            margin: 0px 15px 0px 15px;
+            padding: 10px 0px 10px 0px;
+            font-size: 12px;
+            font-family: 'Open Sans Regular';
+            border-bottom: 1px solid #DDD;
+            background: #FFF;
+        }
+
+            div[layout-obj=reader-nav] div[reader-obj=navigatn] ul {
+                margin: 0px auto;
+                padding: 0px;
+                list-style: none;
+                overflow: hidden;
+                width: 100%;
+                max-width: 1165px;
+            }
+
+                div[layout-obj=reader-nav] div[reader-obj=navigatn] ul li {
+                    float: left;
+                }
+
+
+
+
+    div[layout-obj=reader] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 15px 50px 15px;
+        width: auto;
+        max-width: 1108px;
+    }
+
+        div[layout-obj=reader] div[reader-obj=panel] {
+            position: relative;
+            overflow: hidden;
+            margin: 0px 0px;
+        }
+
+            div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=left-view] {
+                position: relative;
+                float: none;
+                overflow: hidden;
+                width: auto;
+                margin: 0px 0px 0px 0px;
+            }
+
+            div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] {
+                position: relative;
+                float: none;
+                overflow: hidden;
+                width: auto;
+            }
+
+                div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] div[view-obj=left-pane] {
+                    position: relative;
+                    float: none;
+                    overflow: hidden;
+                    width: auto;
+                    margin: 0px 0px 0px 0px;
+                }
+
+                div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] div[view-obj=right-pane] {
+                    position: relative;
+                    float: right;
+                    overflow: hidden;
+                    /*width: 300px;*/
+                    height: 400px;
+                    margin: 0px 0px 0px 30px;
+                    display: none;
+                }
+
+
+    div[pane-obj=content-reader] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 0px 0px;
+    }
+
+        div[pane-obj=content-reader] div[content-reader-obj=cover] {
+            position: relative;
+            height: 250px;
+            background: rgba(240, 240, 240, 1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0px 0px 20px 0px;
+        }
+
+        div[pane-obj=content-reader] div[content-reader-obj=title] {
+            position: relative;
+            overflow: hidden;
+            margin: 0px 0px 20px 0px;
+            font-family: 'Open Sans Semibold';
+            font-size: 32px;
+        }
+
+        div[pane-obj=content-reader] div[content-reader-obj=article] {
+            position: relative;
+            overflow: hidden;
+            margin: 0px 0px 0px 0px;
+            font-family: 'Open Sans Regular';
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+
+
+    div[cntact-frm] {
+        position: relative;
+        overflow: hidden;
+        margin: 50px 0px 0px 0px;
+        font-family: 'Open Sans Regular';
+        font-size: 14px;
+        line-height: 24px;
+        width: auto;
+    }
+
+        div[cntact-frm] div[frm-obj=rw] {
+            position: relative;
+            overflow: hidden;
+            margin: 0px 0px 10px 0px;
+            box-sizing: border-box;
+        }
+
+            div[cntact-frm] div[frm-obj=rw] input[type=text] {
+                position: relative;
+                width: 600px;
+                max-width: 100%;
+                padding: 10px;
+                font-size: 16px;
+
+                box-sizing: border-box;
+            }
+
+            div[cntact-frm] div[frm-obj=rw] textarea {
+                position: relative;
+                width: 600px;
+                max-width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                float: left;
+
+                box-sizing: border-box;
+            }
+
+            div[cntact-frm] div[frm-obj=rw] input[type=submit] {
+                padding: 10px;
+                min-height: 44px;
+                font-size: 16px;
+            }
+
+                div[cntact-frm] div[frm-obj=rw] input[type=submit][focusable] {
+                    background: rgba(0, 148, 255, 1);
+                    color: #FFF;
+                }
+
+
+    div[mnu-lst] {
+        border: 1px none;
+    }
+
+        div[mnu-lst] ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+            div[mnu-lst] ul li {
+                padding: 10px 0px;
+                border-bottom: 1px solid #DDD;
+                font-size: 14px;
+                font-family: 'Open Sans Regular';
+            }
+
+                div[mnu-lst] ul li a {
+                    text-decoration: none;
+                    color: rgba(0, 148, 255, 1);
+                }
+
+                div[mnu-lst] ul li[selected] {
+                    font-size: 14px;
+                    font-family: 'Open Sans Semibold';
+                }
+
+                    div[mnu-lst] ul li[selected] a {
+                        text-decoration: none;
+                        color: rgba(2, 2, 2, 1);
+                    }
+
+                div[mnu-lst] ul li:last-of-type {
+                    border-bottom: none;
+                }
+
+
+    div[layout-obj=reader] div[reader-obj=hint] {
+        margin: 30px auto;
+        padding: 0px;
+        list-style: none;
+        font-size: 14px;
+        font-family: 'Open Sans Regular';
+        line-height: 21px;
+        width: 400px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hide_form {
+        display: none;
+    }
+
+    .spacer {
+        margin: 0px 0px 30px 0px !important;
+    }
+
+
+
+
+    div[page=layout] div[layout-obj=footr] {
+        padding: 0px 0px 0px 0px;
+        background: rgba(30, 30, 30, 1);
+        border-top: 4px solid rgba(255, 255, 255, 1);
+        position: relative;
+    }
+
+        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+            margin: auto;
+            padding: 15px 0px;
+        }
+
+            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] {
+                margin: 0px 15px;
+            }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] {
+                    position: relative;
+                    float: none;
+                    overflow: hidden;
+                    width: auto;
+                    color: #FFF;
+                }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] div[lft-pane-obj=social] {
+                        position: relative;
+                        overflow: hidden;
+                        color: #FFF;
+                        width: 190px;
+                        margin: auto;
+                    }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] div[lft-pane-obj=social] div[social-obj=soc-itm] {
+                            position: relative;
+                            overflow: hidden;
+                            float: left;
+                            width: 39px;
+                            height: 39px;
+                            border: 2px solid #FFF;
+                            border-radius: 60px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 70%;
+                            margin: 0px 6px 0px 0px;
+                            text-align: center;
+                            white-space: nowrap;
+                        }
+
+                            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] div[lft-pane-obj=social] div[social-obj=soc-itm]:last-of-type {
+                                margin: 0px 0px 0px 0px;
+                            }
+
+                            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] div[lft-pane-obj=social] div[social-obj=soc-itm] i {
+                                line-height: 38px;
+                                font-size: 26px;
+                                text-align: center;
+                            }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] {
+                    padding: 0px 0px 0px 0px;
+                    margin: 50px 0px 0px 0px;
+                    text-align: center;
+                }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=top] ul[top-obj=colsvw] li[colsvw-obj=col] {
+                        position: relative;
+                        float: none;
+                        width: auto;
+                        margin: 0px 0px 0px 0px;
+                    }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] {
+                        position: relative;
+                        float: none;
+                        width: auto;
+                        margin: 0px;
+                    }
+
+
+
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=top] ul[top-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] {
+                        position: relative;
+                        font-size: 14px;
+                        line-height: 25px;
+                        overflow: hidden;
+                        text-align: center;
+                        margin: auto;
+                    }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=top] ul[top-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] div[row-obj=img] {
+                            position: relative;
+                            float: none;
+                            display: inline;
+                            width: 14px;
+                            height: 14px;
+                            margin: 0px 10px 0px 0px;
+                            background-size: 100%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=top] ul[top-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] div[row-obj=text] {
+                            position: relative;
+                            float: none;
+                            width: auto;
+                        }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] {
+                        position: relative;
+                        overflow: hidden;
+                        width: auto;
+                        margin: 40px 0px 0px 0px;
+                        color: rgba(255, 255, 255, .7);
+                    }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] {
+                            position: relative;
+                            margin: 0px;
+                            padding: 0px;
+                            list-style: none;
+                            overflow: hidden;
+                        }
+
+                            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] {
+                                position: relative;
+                                float: none;
+                                min-width: 100px;
+                                margin: 0px 0px 0px 0px;
+                            }
+
+                                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col]:nth-of-type(2n) {
+                                    display: none;
+                                }
+
+                                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col]:last-of-type {
+                                    margin-right: 0px;
+                                }
+
+                                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] {
+                                    position: relative;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    list-style: none;
+                                }
+
+                                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row][type=headr] {
+                                        position: relative;
+                                        font-size: 19px;
+                                        line-height: 30px;
+                                        color: rgba(2555, 255, 255, .7);
+                                    }
+
+                                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] {
+                                        position: relative;
+                                        font-size: 13px;
+                                        line-height: 25px;
+                                        overflow: hidden;
+                                    }
+
+                                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] div[row-obj=img] {
+                                            position: relative;
+                                            float: left;
+                                            width: 14px;
+                                            height: 14px;
+                                            margin: 0px 10px 0px 0px;
+                                            background-size: 100%;
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                        }
+
+                                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] div[row-obj=text] {
+                                            position: relative;
+                                            float: left;
+                                            width: auto;
+                                        }
+
+
+
+            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] {
+                position: relative;
+                overflow: hidden;
+                color: rgba(255, 255, 255, .7);
+                font-size: 11px;
+                margin: 30px 0px 0px 0px;
+            }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=copyright] {
+                    position: relative;
+                    overflow: hidden;
+                    float: left;
+                    width: 350px;
+                }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] {
+                    position: relative;
+                    overflow: hidden;
+                    float: none;
+                    width: auto;
+                }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] ul {
+                        margin: 0px;
+                        padding: 0px;
+                        list-style: none;
+                        overflow: hidden;
+                    }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] ul li {
+                            float: left;
+                            margin: 0px 10px 0px 0px;
+                        }
+
+                            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] ul li:last-of-type {
+                                margin-right: 0px;
+                            }
+
+
+
+
+            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] {
+                margin: 0px 20px;
+            }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=copyright] {
+                    position: relative;
+                    overflow: hidden;
+                    float: none;
+                    margin: auto;
+                    width: auto;
+                    text-align: center;
+                }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] {
+                    position: relative;
+                    overflow: hidden;
+                    float: none;
+                    width: auto;
+                    margin: auto;
+                    text-align: center;
+                }
+}

@@ -1,0 +1,74 @@
+﻿.tw_white_ico {
+    background-image:url('/Images/ico/tw_white.png');
+}
+.fb_white_ico {
+    background-image:url('/Images/ico/fb_white.png');
+}
+.in_white_ico {
+    background-image:url('/Images/ico/in_white.png');
+}
+.gp_white_ico {
+    background-image:url('/Images/ico/gp_white.png');
+}
+
+.android_white_24_ico {
+    background-image:url('/Images/ico/android_white_24.png');
+}
+.apple_white_24_ico {
+    background-image:url('/Images/ico/apple_white_24.png');
+}
+.bberry_white_24_ico {
+    background-image:url('/Images/ico/bberry_white_24.png');
+}
+.windows_white_24_ico {
+    background-image:url('/Images/ico/windows_white_24.png');
+}
+
+.android_store_ico {
+    background-image:url('/Images/ico/android_store.png');
+    background-position: center;
+}
+.apple_store_ico {
+    background-image:url('/Images/ico/apple_store.png');
+    background-position: center;
+}
+.bberry_store_ico {
+    background-image:url('/Images/ico/blackberry_store.png');
+    background-position: center;
+}
+.windows_store_ico {
+    background-image: url('/Images/ico/windows_store.png');
+    background-position: center;
+}
+
+.phone_white_24_ico {
+    background-image: url('/Images/ico/phone_white_24.png');
+}
+.email_white_24_ico {
+    background-image: url('/Images/ico/email_white_24.png');
+}
+
+
+
+.srch_20_ico {
+    background-image: url('/Images/ico/srch_20.png');
+}
+
+
+
+.tw_ico {
+    background-image:url('/Images/ico/tw.png');
+    background-color: rgba(25, 191, 229, 1);
+}
+.fb_ico {
+    background-image:url('/Images/ico/fb.png');
+    background-color: rgba(60, 91, 155, 1);
+}
+.in_ico {
+    background-image:url('/Images/ico/in.png');
+    background-color: rgba(0, 122, 185, 1);
+}
+.gp_ico {
+    background-image:url('/Images/ico/gp.png');
+    background-color: rgba(214, 73, 47, 1);
+}

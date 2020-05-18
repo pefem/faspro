@@ -1,0 +1,246 @@
+﻿/*Header Part*/
+div[logo] {
+    background-image: url("/Images/site-logo.png");
+    background-position: center;
+}
+
+div[search] {
+    z-index: 1;
+}
+
+div[layout-obj=headr] div[search-obj=field] input[type=text] {
+    padding: 2px 5px 2px 5px !important;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .4);
+}
+
+div[layout-obj=headr] div[search-obj=field] input[type=button],
+div[layout-obj=headr] div[search-obj=field] input[type=submit] {
+    padding: 2px 5px 2px 5px !important;
+    margin: 5px 5px 5px 1px;
+    min-height: 23px !important;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 148, 255, 1);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .4);
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: rgba(0, 148, 255, 1);
+    color: #FFF;
+}
+
+div[clear] {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Header Wrapper*/
+div[page=layout] div[layout-obj=headr] {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    z-index: 100;
+    height: 80px;
+    background: rgba(30, 30, 30, 1);
+}
+
+    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] {
+        margin: auto;
+        width: auto;
+        max-width: 82%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 100;
+        padding: 0px 0px 0px 0px;
+        border-bottom: 1px none rgba(255, 255, 255, 1);
+    }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] {
+            position: relative;
+            margin: auto;
+            width: auto;
+            max-width: 85%;
+        }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] {
+            float: left;
+            position: relative;
+            overflow: hidden;
+            width: 180px;
+        }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] div[left-obj=logo] {
+                font-family: 'Open Sans Semibold';
+                font-size: 45px;
+                color: rgba(255, 255, 255, 1);
+                text-shadow: rgba(0, 0, 0, .3) 2px 2px 10px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: left bottom;
+                margin: 10px 0px 0px 0px;
+                height: 52px;
+            }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] div[wrappr-obj=right] {
+            float: right;
+            position: relative;
+            width: auto;
+        }
+
+            /* Menu List Area*/
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] {
+                padding: 10px 0px 0px 0px;
+                cursor: pointer;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=shape] {
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    width: 23px;
+                    height: 4px;
+                    margin: 0px 0px 0px 10px;
+                    cursor: pointer;
+                    background: rgba(255, 255, 255, 1);
+                    display: none;
+                }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=shape]:before {
+            width: 100%;
+            height: 4px;
+            content: "";
+            background: rgba(255, 255, 255, 1);
+            position: absolute;
+            top: 8px;
+            left: 0px;
+        }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=shape]:after {
+            width: 100%;
+            height: 4px;
+            content: "";
+            background: rgba(255, 255, 255, 1);
+            position: absolute;
+            top: 16px;
+            left: 0px;
+        }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] {
+            padding: 0px 0px;
+            position: relative;
+            white-space: nowrap;
+        }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] {
+                display: inline-block;
+                margin: 0px 0px 0px 0px;
+                padding: 10px 15px 10px 15px;
+                font-size: 17px;
+                font-family: 'Open Sans Light';
+                color: rgba(255, 255, 255, 1);
+                position: relative;
+                border: 1px none #fff;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:before {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 1px;
+                    background: rgba(255, 255, 255, 1);
+                    background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                    background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                    background: -ms-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                    background: -o-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                    background: linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] :last-of-type::before {
+                    display: none;
+                }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] a {
+                    color: rgba(0, 0, 0, 1);
+                    color: #FFF;
+                    text-decoration: none;
+                }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:hover a {
+                    color: rgba(0, 148, 255, .5);
+                    color: rgba(229, 244, 254, 1);
+                    text-decoration: none;
+                    text-shadow: none;
+                }
+
+
+
+/* 
+ * Body Part*/
+div[page=layout] div[layout-obj=body] {
+    position: relative;
+    background: rgba(200, 200, 200, .1);
+    margin: 60px 0px 0px 0px;
+    padding: 20px 0px 60px 0px;
+}
+
+    div[page=layout] div[layout-obj=body] div[body-obj=wrappr] {
+        position: relative;
+        overflow: hidden;
+        width: 83%;
+        min-height: 300px;
+        margin: auto;
+        /*background: rgba(0, 148, 255, .3);*/
+    }
+
+        div[page=layout] div[layout-obj=body] div[body-obj=wrappr] div[wrappr-obj=lft] {
+            position: relative;
+            overflow: hidden;
+            float: none;
+            width: auto;
+            min-height: 1200px;
+            background: #FFF;
+            padding: 0px 30px 0px 30px;
+        }
+
+        div[page=layout] div[layout-obj=body] div[body-obj=wrappr] div[wrappr-obj=rgt] {
+            position: relative;
+            float: right;
+            overflow: hidden;
+            width: 300px;
+            min-height: 600px;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 5px 0px 10px;
+        }
+
+
+
+
+    /* About Us Hint Panel Area*/
+    div[page=layout] div[layout-obj=body] div[body-obj=abtus-info-pnl] {
+        padding: 0px 0px 0px 0px;
+        border-top: 4px solid rgba(255, 255, 255, 1);
+        margin: 0px 0px 100px 0px;
+        position: relative;
+    }
+
+        div[page=layout] div[layout-obj=body] div[body-obj=abtus-info-pnl] div[abtus-info-pnl-obj=text-panel] {
+            padding: 0px 0px 0px 0px;
+            width: auto;
+            max-width: 880px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            font-size: 29px;
+            font-family: 'RaleWay';
+            text-align: center;
+            line-height: 39px;
+        }

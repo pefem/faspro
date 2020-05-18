@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page404.Master.cs" Inherits="FindAService_WebForm.Page404" %>
+
+<%
+    var db = new FindAService_WebForm.FASDBEntities();
+%>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><% Response.Write(ConfigurationManager.AppSettings["site_title"].ToString()); %></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%
+        Response.AddHeader("Cache-control", "no-store, must-revalidate, private,no-cache");
+        Response.AddHeader("Pragma", "no-cache");
+        Response.AddHeader("Expires", "0");
+    %>
+</head>
+<body>
+    <asp:ContentPlaceHolder runat="server" ID="script_area"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder runat="server" ID="style_area"></asp:ContentPlaceHolder>    
+    
+    <link rel="stylesheet" href="Content/css/vendors/font.style.css" type="text/css" />
+    <link rel="stylesheet" href="Content/css/vendors/font-awesome.style.css" type="text/css" />
+    <link rel="stylesheet" href="Content/css/vendors/icon.style.css" type="text/css" />
+    <link rel="stylesheet" href="Content/css/widgets/form.element.style.css" type="text/css" />
+    <link rel="stylesheet" href="Content/css/layouts/layout.style.css" type="text/css" />
+    <link rel="stylesheet" href="Content/css/layouts/layout.reader.master.style.css" type="text/css" />
+
+    <div page="layout">
+
+        <div layout-obj="headr">
+            <div headr-obj="headr-wrappr">
+                <div wrappr-obj="left">
+                    <a href=".">
+                        <div left-obj="logo" logo></div>
+                    </a>
+                </div>
+                <div wrappr-obj="right">
+                    <div right-obj="menu-btn">
+                        <asp:ContentPlaceHolder runat="server" ID="menu_area"></asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div layout-obj="body" id="main_body">
+            <div body-obj="wrappr">
+                <asp:ContentPlaceHolder runat="server" ID="main_body"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

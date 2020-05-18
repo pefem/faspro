@@ -1,0 +1,303 @@
+﻿/*Header Part*/
+
+/*div[logo] {
+    background-image: url("/Images/site-logo.png");
+    background-position: center;
+}*/
+
+            div[bannr-obj=search-wrappr] {
+                width: auto;
+                max-width: 25em;
+                height: 63px;
+                overflow: hidden;
+                position: absolute;
+                position: relative;
+                top: -10px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                margin: 50px auto;
+                padding: 10px;
+                z-index: 0;
+                white-space: nowrap;
+                -webkit-transition: left .3s ease-in;
+                -moz-transition: left .3s ease-in;
+                -ms-transition: left .3s ease-in;
+                -o-transition: left .3s ease-in;
+                transition: left .3s ease-in;
+            }
+
+                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-hdr] {
+                    margin: 0px auto 50px auto;
+                    padding: 10px;
+                    white-space: nowrap;
+                    font-family: 'Open Sans Regular';
+                    color: #FFF;
+                    text-align: center;
+                }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-hdr] div[srch-hdr-obj=title] {
+                        font-size: 58px;
+                        font-family: 'Open Sans Regular';
+                        white-space: pre-wrap;
+                        line-height: 58px;
+                        margin: 0px 0px 20px 0px;
+                    }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-hdr] div[srch-hdr-obj=hint] {
+                        font-size: 22px;
+                        font-family: 'Open Sans Light';
+                    }
+
+                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] {
+                    height: 43px;
+                    margin: auto;
+                    padding: 3px;
+                    z-index: 10;
+                    white-space: nowrap;
+                    position: relative;
+                    background: rgba(20, 20, 20, .8);
+                    border-radius: 5px;
+                }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] input[type=text] {
+                        padding: 11px 10px 11px 10px;
+                        border-radius: 1px;
+                        border: none;
+                        max-height: 45px;
+                        min-height: 21px;
+                        width: 100%;
+                        font-size: 18px;
+                        font-family: 'Open Sans Light';
+                        margin: 0px;
+                    }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] select {
+                        padding: 10px;
+                        border-radius: 1px;
+                        border: none;
+                        max-height: 45px;
+                        min-height: 18px;
+                        width: auto;
+                        max-width: 100%;
+                        min-width: 100%;
+                        font-size: 18px;
+                        font-family: 'Open Sans Light';
+                        margin: 0px;
+
+                        text-align: center;
+                    }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] {
+                    }
+
+                        div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] {
+                        }
+
+                            div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj] {
+                                float: left;
+                                margin: 0px 10px 0px 0px;
+                            }
+
+                                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj]:last-of-type {
+                                    margin: 0px 0px 0px 0px;
+                                }
+
+                            div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj=srch-itm] {
+                                width: auto;
+                                background: #FFF;
+                                position: relative;
+                                overflow: hidden;
+                                float: none;
+                            }
+
+                                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj=srch-itm] div[srch-itm=field] {
+                                    margin: 0px 0px 0px 0px;
+                                    overflow: hidden;
+                                    max-height: 42px;
+                                }
+
+                            div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj=srch-btn] {
+                                width: 5em;
+                                height: 42px;
+                                background: rgba(0, 148, 255, 1);
+                                margin: 0px 0px 0px 0px;
+                                position: relative;
+                                overflow: hidden;
+                                float: right;
+                            }
+
+                                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj=srch-btn] input[type=submit] {
+                                    padding: 10px 10px 10px 10px;
+                                    border-radius: 1px;
+                                    max-height: 44px;
+                                    min-height: 30px;
+                                    width: 100%;
+                                    font-size: 18px;
+                                    font-family: 'Open Sans Regular';
+                                    margin: 0px;
+                                    background: rgba(0, 148, 255, 1);
+                                    color: #FFF;
+                                }
+
+
+
+
+
+
+
+@media screen and (max-width:760px) {
+    @-webkit-viewport {
+        width: 320px;
+    }
+
+    @-moz-viewport {
+        width: 320px;
+    }
+
+    @-ms-viewport {
+        width: 320px;
+    }
+
+    @-o-viewport {
+        width: 320px;
+    }
+
+
+
+                div[bannr-obj=search-wrappr] {
+                width: auto;
+                max-width: 25em;
+                height: 63px;
+                overflow: hidden;
+                position: absolute;
+                position: relative;
+                top: -10px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                margin: 50px auto;
+                padding: 10px;
+                z-index: 0;
+                white-space: nowrap;
+                -webkit-transition: left .3s ease-in;
+                -moz-transition: left .3s ease-in;
+                -ms-transition: left .3s ease-in;
+                -o-transition: left .3s ease-in;
+                transition: left .3s ease-in;
+            }
+
+                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-hdr] {
+                    margin: 0px auto 50px auto;
+                    padding: 10px;
+                    white-space: nowrap;
+                    font-family: 'Open Sans Regular';
+                    color: #FFF;
+                    text-align: center;
+                }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-hdr] div[srch-hdr-obj=title] {
+                        font-size: 58px;
+                        font-family: 'Open Sans Regular';
+                        white-space: pre-wrap;
+                        line-height: 58px;
+                        margin: 0px 0px 20px 0px;
+                    }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-hdr] div[srch-hdr-obj=hint] {
+                        font-size: 22px;
+                        font-family: 'Open Sans Light';
+                    }
+
+                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] {
+                    height: 43px;
+                    margin: auto;
+                    padding: 3px;
+                    z-index: 10;
+                    white-space: nowrap;
+                    position: relative;
+                    background: rgba(20, 20, 20, .8);
+                    border-radius: 5px;
+                }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] input[type=text] {
+                        padding: 11px 10px 11px 10px;
+                        border-radius: 1px;
+                        border: none;
+                        max-height: 45px;
+                        min-height: 21px;
+                        width: 100%;
+                        font-size: 18px;
+                        font-family: 'Open Sans Light';
+                        margin: 0px;
+                    }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] select {
+                        padding: 10px;
+                        border-radius: 1px;
+                        border: none;
+                        max-height: 45px;
+                        min-height: 18px;
+                        width: auto;
+                        max-width: 100%;
+                        min-width: 100%;
+                        font-size: 18px;
+                        font-family: 'Open Sans Light';
+                        margin: 0px;
+
+                        text-align: center;
+                    }
+
+                    div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] {
+                    }
+
+                        div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] {
+                        }
+
+                            div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj] {
+                                float: left;
+                                margin: 0px 10px 0px 0px;
+                            }
+
+                                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj]:last-of-type {
+                                    margin: 0px 0px 0px 0px;
+                                }
+
+                            div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj=srch-itm] {
+                                width: auto;
+                                background: #FFF;
+                                position: relative;
+                                overflow: hidden;
+                                float: none;
+                            }
+
+                                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj=srch-itm] div[srch-itm=field] {
+                                    margin: 0px 0px 0px 0px;
+                                    overflow: hidden;
+                                    max-height: 42px;
+                                }
+
+                            div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj=srch-btn] {
+                                width: 5em;
+                                height: 42px;
+                                background: rgba(0, 148, 255, 1);
+                                margin: 0px 0px 0px 0px;
+                                position: relative;
+                                overflow: hidden;
+                                float: right;
+                            }
+
+                                div[bannr-obj=search-wrappr] div[srch-wrappr-obj=srch-bdy] div[srch-bdy-obj=tabpage] div[tabpage-obj=pnl] div[pnl-obj=srch-btn] input[type=submit] {
+                                    padding: 10px 10px 10px 10px;
+                                    border-radius: 1px;
+                                    max-height: 44px;
+                                    min-height: 30px;
+                                    width: 100%;
+                                    font-size: 18px;
+                                    font-family: 'Open Sans Regular';
+                                    margin: 0px;
+                                    background: rgba(0, 148, 255, 1);
+                                    color: #FFF;
+                                }
+
+}

@@ -1,0 +1,414 @@
+﻿div[layout-obj=account] {
+    position: relative;
+    margin: 0px 0px 150px 0px;
+}
+
+    div[layout-obj=account] div[account-obj=hdr] {
+        display: none;
+    }
+
+    div[layout-obj=account] div[account-obj=tab] {
+        border: 0px none;
+        border-bottom: 2px solid rgba(220, 220, 220, 1);
+        position: relative;
+    }
+
+        div[layout-obj=account] div[account-obj=tab] ul {
+            margin: 0px auto -2px auto;
+            padding: 0px;
+            list-style: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            width: 300px;
+        }
+
+            div[layout-obj=account] div[account-obj=tab] ul li {
+                margin: 0px;
+                padding: 14px 10px 14px 10px;
+                position: relative;
+                float: left;
+                width: 290px;
+                border: 0px;
+                border-bottom: 1px solid transparent;
+                text-align: center;
+                font-family: 'Open Sans Bold';
+                font-size: 17px;
+                color: rgba(40, 40, 40, .5);
+            }
+
+                div[layout-obj=account] div[account-obj=tab] ul li span {
+                    margin: 0px 0px 0px 0px;
+                    padding: 10px 0px 0px 0px;
+                    position: relative;
+                    text-align: center;
+                    text-align: center;
+                    font-family: 'Open Sans Bold';
+                    font-size: 22px;
+                }
+
+                    div[layout-obj=account] div[account-obj=tab] ul li span:before {
+                        margin: auto;
+                        padding: 4px;
+                        position: absolute;
+                        top: 6px;
+                        left: -25px;
+                        bottom: -3px;
+                        content: attr(label);
+                        color: #FFF;
+                        width: 20px;
+                        height: 20px;
+                        background: rgba(40, 40, 40, .4);
+                        border-radius: 60px;
+                        display: none;
+                    }
+
+                div[layout-obj=account] div[account-obj=tab] ul li[selected=true] {
+                    border-bottom: 2px solid rgba(0, 148, 255, 1);
+                    color: rgba(40, 40, 40, 1);
+                }
+
+                    div[layout-obj=account] div[account-obj=tab] ul li[selected=true] span:before {
+                        background: rgba(0, 148, 255, 1);
+                    }
+
+                div[layout-obj=account] div[account-obj=tab] ul li[okay] span:before {
+                    background: rgba(0, 148, 255, 1);
+                }
+
+    div[layout-obj=account] div[account-obj=bdy] {
+    }
+
+        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] {
+            margin: 30px auto 60px auto;
+            padding: 0px 0px 0px 0px;
+            width: 1000px;
+            font-size: 14px;
+            font-family: 'Open Sans Regular';
+            position: relative;
+            overflow: hidden;
+        }
+
+            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] {
+                position: relative;
+                float: left;
+                overflow: hidden;
+            }
+
+                div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul {
+                    list-style: none;
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li {
+                        padding: 3px 0px 3px 0px;
+                        white-space: nowrap;
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div {
+                            position: relative;
+                        }
+
+                            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=info] {
+                                width: auto;
+                                float: none;
+                                overflow: hidden;
+                            }
+
+                                div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=info] div[info-obj=img] {
+                                    width: 250px;
+                                    height: 250px;
+                                    background: rgba(200, 200, 200, .6);
+                                    float: none;
+                                }
+
+                                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=info] div[info-obj=img] img {
+                                        width: auto;
+                                        min-width: 100%;
+                                        max-width: 100%;
+                                        height: 100%;
+                                        width: 250px;
+                                        height: 250px;
+                                    }
+
+        div[layout-obj=account] div[account-obj=bdy] div[bdy-obj=left-pane] ul li div[type=info] div[info-obj=phldr] {
+            width: 240px;
+            height: 240px;
+            position: absolute;
+            left: -5px;
+            bottom: -10px;
+            right: 0px;
+            margin: auto;
+            background: rgba(245, 245, 245, 1);
+            text-align: center;
+        }
+
+            div[layout-obj=account] div[account-obj=bdy] div[bdy-obj=left-pane] ul li div[type=info] div[info-obj=phldr] i {
+                font-size: 290px;
+                color: #FFF;
+            }
+
+        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=info] div[info-obj=txt] {
+            font-size: 15px;
+            padding: 10px;
+            text-align: center;
+            width: auto;
+            float: none;
+            display: none;
+        }
+
+        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=hdr] {
+            font-size: 15px;
+            background: rgba(0, 148, 255, 1);
+            border-radius: 6px;
+            color: #FFF;
+            position: relative;
+            overflow: hidden;
+            min-width: 230px;
+        }
+
+            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=hdr] header {
+                padding: 10px 12px;
+                overflow: hidden;
+                width: 230px;
+            }
+
+                div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=hdr] header span {
+                    width: auto;
+                    padding: 0px;
+                    float: left;
+                }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=hdr] header span:last-of-type {
+                        width: auto;
+                        padding: 0px;
+                        float: right;
+                    }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=hdr] header span a {
+                        width: auto;
+                        padding: 0px;
+                    }
+
+            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=hdr] a {
+                padding: 10px 12px;
+                color: #FFF;
+                text-decoration: none;
+                float: left;
+                width: 230px;
+            }
+
+                div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=hdr] a:hover {
+                    text-decoration: underline;
+                }
+
+        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=lst] {
+            float: none;
+            overflow: hidden;
+            padding: 0px 0px 20px 0px;
+        }
+
+            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=lst] li {
+                padding: 10px;
+            }
+
+                div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=left-pane] ul li div[type=lst] li div[lst-obj=hdr] {
+                    font-family: 'Open Sans Bold';
+                }
+
+
+
+        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] {
+            position: relative;
+            float: none;
+            overflow: hidden;
+            margin: 5px 0px 0px 50px;
+            width: auto;
+        }
+
+            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] {
+                margin: 0px auto 60px 30px;
+                padding: 0px 0px 0px 0px;
+                width: 460px;
+                font-size: 14px;
+                font-family: 'Open Sans Regular';
+                display: none;
+            }
+
+                div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row] {
+                    margin: 0px 10px 28px 10px;
+                }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row] div[row-obj=column] {
+                        margin: 9px;
+                    }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row][float=true] {
+                        overflow: hidden;
+                        position: relative;
+                        margin: 0px 0px 0px 0px;
+                        padding: 0px 0px 0px 0px;
+                    }
+
+                        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row][float=true][headr] span {
+                            font-size: 15px;
+                            font-family: 'Open Sans Bold';
+                        }
+
+                        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row][float=true] div[row-obj=column] {
+                            float: left;
+                            overflow: hidden;
+                            position: relative;
+                            padding: 5px 5px 5px 5px;
+                            margin: 0px 0px 0px 0px;
+                            min-width: 170px;
+                            text-align: left;
+                        }
+
+                            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row][float=true] div[row-obj=column] span {
+                                margin: 6px 0px 6px 0px;
+                                line-height: 32px;
+                            }
+
+                            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row][float=true] div[row-obj=column] a {
+                                text-decoration: none;
+                                color: rgba(0, 148, 255, 1);
+                            }
+
+                                div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row][float=true] div[row-obj=column] a:hover {
+                                    text-decoration: underline;
+                                    color: rgba(0, 148, 255, 1);
+                                }
+
+                            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row][float=true] div[row-obj=column]:last-of-type {
+                                float: none;
+                                overflow: hidden;
+                                position: relative;
+                                width: auto;
+                                font-size: 12px;
+                                line-height: 19px;
+                                text-align: left;
+                            }
+
+                            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row][float=true] div[row-obj=column] div[row-obj=column] {
+                                float: left;
+                                overflow: hidden;
+                                position: relative;
+                                padding: 3px 0px;
+                                margin: 0px 8px 0px 0px;
+                                min-width: 10px;
+                                text-align: right;
+                            }
+
+                                div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row][float=true] div[row-obj=column] div[row-obj=column]:last-of-type {
+                                    float: none;
+                                    overflow: hidden;
+                                    position: relative;
+                                    padding: 0px;
+                                    width: auto;
+                                    font-size: 12px;
+                                    line-height: 19px;
+                                    text-align: left;
+                                }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row] div[row-obj=column] input[type=text],
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row] div[row-obj=column] input[type=password],
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row] div[row-obj=column] textarea {
+                        width: 250px;
+                        font-size: 14px;
+                    }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row] div[row-obj=column] select {
+                        min-width: 263px;
+                        font-size: 14px;
+                    }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] div[layout-obj=form] div[form-obj=row] div[row-obj=column] input[type=submit] {
+                        font-size: 14px;
+                        font-family: 'Open Sans Bold';
+                        padding: 10px;
+                        height: inherit;
+                        max-height: inherit;
+                        background: rgba(0, 148, 255, 1);
+                        color: #FFF;
+                    }
+
+
+            div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] ul[layout-obj=tab] {
+                margin: 0px auto 30px 20px;
+                padding: 0px;
+                list-style: none;
+                position: relative;
+                overflow: hidden;
+                border: none;
+                border-bottom: 1px solid rgba(0, 148, 255, 1);
+            }
+
+                div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] ul[layout-obj=tab] li[tab-obj=btn] {
+                    float: left;
+                    overflow: hidden;
+                    margin: 0px 2px 0px 0px;
+                    min-width: 80px;
+                    text-align: center;
+                    background: rgba(220, 220, 220, .5);
+                    color: #101;
+                    font-family: 'Open Sans SemiBold';
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] ul[layout-obj=tab] li[tab-obj=btn] a {
+                        color: #101;
+                        text-decoration: none;
+                        padding: 10px 25px;
+                        float: left;
+                    }
+
+                        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] ul[layout-obj=tab] li[tab-obj=btn] a:hover {
+                            text-decoration: underline;
+                        }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] ul[layout-obj=tab] li[tab-obj=btn]:hover {
+                        background: rgba(0, 148, 255, .1);
+                    }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] ul[layout-obj=tab] li[tab-obj=btn]:last-of-type {
+                        margin: 0px;
+                    }
+
+                    div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] ul[layout-obj=tab] li[tab-obj=btn][selected=true] {
+                        background: rgba(0, 148, 255, 1);
+                        color: #FFF;
+                    }
+
+                        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] ul[layout-obj=tab] li[tab-obj=btn][selected=true] a {
+                            color: #FFF;
+                        }
+
+                        div[layout-obj=account] div[account-obj=bdy] div[ftype] div[bdy-obj=form-layout] div[form-layout-obj=right-pane] ul[layout-obj=tab] li[tab-obj=btn][selected=true]:hover {
+                            background: rgba(0, 148, 255, .5);
+                        }
+
+
+    div[layout-obj=account] div[account-obj=hint] {
+        margin: 30px auto;
+        padding: 0px;
+        list-style: none;
+        font-size: 14px;
+        font-family: 'Open Sans Regular';
+        line-height: 21px;
+        width: 400px;
+        position: relative;
+        overflow: hidden;
+    }
+
+.hide_form {
+    display: none;
+}
+
+.spacer {
+    margin: 0px 0px 30px 0px !important;
+}

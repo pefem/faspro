@@ -1,0 +1,2465 @@
+﻿
+div[layout-obj=reader-headr] {
+    position: relative;
+    overflow: hidden;
+    max-height: 200px;
+    border-bottom: 1px solid #DDD;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 30px 0px;
+}
+
+    div[layout-obj=reader-headr] div[headr-obj=hdr] {
+        position: relative;
+        overflow: hidden;
+        width: 82%;
+        height: 200px;
+        max-width: 1108px;
+        margin: 0px auto;
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding: 20px 0px;
+    }
+
+        div[layout-obj=reader-headr] div[headr-obj=hdr]:before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            z-index: 0;
+            content: '';
+        }
+
+        div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] {
+            position: relative;
+            width: 500px;
+            padding: 0px 0px;
+        }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=title] {
+                position: relative;
+                overflow: hidden;
+                margin: 0px 0px 20px 0px;
+                font-family: 'Open Sans Light';
+                font-size: 36px;
+                text-align: left;
+                text-shadow: rgba(255, 255, 255, 1) 1px 1px 10px;
+                line-height: 45px;
+            }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=description] {
+                position: relative;
+                overflow: hidden;
+                margin: 0px 0px 20px 0px;
+                font-family: 'Open Sans Light';
+                font-size: 16px;
+                text-align: left;
+                line-height: 20px;
+            }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=lft-pane] div[pane-obj=date-descr] {
+                position: relative;
+                overflow: hidden;
+                margin: 0px 0px 20px 0px;
+                font-family: 'Open Sans Regular';
+                font-size: 13px;
+                text-align: left;
+            }
+
+        div[layout-obj=reader-headr] div[headr-obj=hdr] div[hdr-obj=rgt-pane] {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 500px;
+            padding: 0px 0px;
+            background: rgba(240, 240, 240, 1);
+        }
+
+        div[layout-obj=reader-headr] div[headr-obj=hdr] div[pane-obj=buttn] {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            overflow: hidden;
+            margin: 0px 0px 20px 0px;
+            font-family: 'Open Sans Light';
+            font-size: 16px;
+            text-align: left;
+            line-height: 29px;
+            width: 190px;
+            height: 60px;
+            border: 1px solid;
+            border-radius: 4px;
+            background-image: url('../../../Images/quickteller.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+            div[layout-obj=reader-headr] div[headr-obj=hdr] div[pane-obj=buttn] a {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                overflow: hidden;
+            }
+
+
+
+
+
+
+
+
+/**
+  ** Articles Search
+  */
+
+div[layout-obj=blog-post-search] {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 0px 40px 0px;
+    max-width: 1100px;
+    margin: 60px auto 10px auto;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    box-align: center;
+}
+
+    div[layout-obj=blog-post-search] div[search] {
+        position: relative;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        -o-flex: 1;
+        flex: 1;
+    }
+
+    div[layout-obj=blog-post-search] div[search=field] {
+        position: relative;
+        overflow: hidden;
+        width: auto;
+    }
+
+        div[layout-obj=blog-post-search] div[search=field] div[field-obj=textbox] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+        }
+
+            div[layout-obj=blog-post-search] div[search=field] div[field-obj=textbox] input[type=text] {
+                position: relative;
+                width: 100%;
+                min-width: 100%;
+                font-size: 29px;
+                line-height: 34px;
+                padding: 13px;
+                min-height: 40px;
+            }
+
+    div[layout-obj=blog-post-search] div[search=button] {
+        position: relative;
+        overflow: hidden;
+        max-width: 200px;
+    }
+
+        div[layout-obj=blog-post-search] div[search=button] div[button-obj=submit] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+            background: rgba(0, 148, 255, 1);
+            color: #FFF;
+            max-height: 68px;
+        }
+
+            div[layout-obj=blog-post-search] div[search=button] div[button-obj=submit] input[type=submit] {
+                position: relative;
+                width: 100%;
+                min-width: 100%;
+                min-height: 68px;
+                max-height: inherit;
+                font-size: 21px;
+                padding: 13px;
+                opacity: 0;
+            }
+
+            div[layout-obj=blog-post-search] div[search=button] div[button-obj=submit] span {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                font-size: 21px;
+                padding: 18px;
+                line-height: 30px;
+                text-align: center;
+            }
+
+
+
+
+
+
+/**
+  ** Articles Listing
+  */
+
+div[layout-obj=blog-posts] {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 0px 40px 0px;
+    max-width: 1100px;
+    margin: 60px auto 100px auto;
+}
+
+    div[layout-obj=blog-posts] div[posts-item=post] {
+        position: relative;
+        overflow: hidden;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px none #000;
+        margin: 0px 0px 30px 0px;
+        display: -webkit-box;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-box-align: center;
+        box-align: center;
+    }
+
+        div[layout-obj=blog-posts] div[posts-item=post] div[post] {
+            position: relative;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -ms-flex: 1;
+            -o-flex: 1;
+            flex: 1;
+        }
+
+        div[layout-obj=blog-posts] div[posts-item=post] div[post=banner] {
+            position: relative;
+            overflow: hidden;
+            border: 1px none #000;
+            margin: 0px 0px 0px 80px;
+            max-width: 500px;
+            height: 300px;
+            background-color: #EFEFEF;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            -webkit-transition: opacity .2s linear;
+            -moz-transition: opacity .2s linear;
+            -ms-transition: opacity .2s linear;
+            -o-transition: opacity .2s linear;
+            transition: opacity .2s linear;
+        }
+
+            div[layout-obj=blog-posts] div[posts-item=post] div[post=banner]:hover {
+                opacity: .6;
+                -webkit-transition: opacity .2s linear;
+                -moz-transition: opacity .2s linear;
+                -ms-transition: opacity .2s linear;
+                -o-transition: opacity .2s linear;
+                transition: opacity .2s linear;
+            }
+
+        div[layout-obj=blog-posts] div[posts-item=post] div[post=article] {
+            position: relative;
+            overflow: hidden;
+            border: 1px none #000;
+            margin: 0px 0px 0px 0px;
+            width: auto;
+        }
+
+            div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] {
+                position: relative;
+                overflow: hidden;
+                margin: 0px 0px 40px 0px;
+            }
+
+                div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=title] {
+                    position: relative;
+                    font-size: 32px;
+                    font-family: 'Open Sans Semibold';
+                    margin: 0px 0px 15px 0px;
+                }
+
+                    div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=title] a {
+                        text-decoration: none;
+                        opacity: 1;
+                        color: rgba(25,25,25,1);
+                        -webkit-transition: opacity .2s linear;
+                        -moz-transition: opacity .2s linear;
+                        -ms-transition: opacity .2s linear;
+                        -o-transition: opacity .2s linear;
+                        transition: opacity .2s linear;
+                    }
+
+                        div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=title] a:hover {
+                            opacity: .6;
+                            -webkit-transition: opacity .2s linear;
+                            -moz-transition: opacity .2s linear;
+                            -ms-transition: opacity .2s linear;
+                            -o-transition: opacity .2s linear;
+                            transition: opacity .2s linear;
+                        }
+
+                div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=pos] {
+                    position: relative;
+                    font-size: 14px;
+                    font-family: 'Open Sans Regular';
+                    line-height: 23px;
+                    margin: 10px 0px 15px 0px;
+                }
+
+                div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=authr] {
+                    position: relative;
+                    font-size: 14px;
+                    font-family: 'Open Sans Bold';
+                    line-height: 33px;
+                    text-transform: capitalize;
+                }
+
+                    div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=authr] span {
+                        margin-right: 20px;
+                    }
+
+                div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=sumry] {
+                    position: relative;
+                    font-size: 17px;
+                    font-family: 'Open Sans Light';
+                    line-height: 30px;
+                }
+
+
+    div[layout-obj=blog-posts] div[posts-obj=paging] {
+        padding: 5px;
+        margin: 0px 0px 120px 0px;
+        text-align: center;
+        font-family: 'Open Sans Bold';
+        font-size: 13px;
+        border-top: 1px solid rgba(100, 100, 100, .1);
+    }
+
+        div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=title] {
+            padding: 10px 0px 10px 0px;
+            text-align: left;
+            font-family: 'Open Sans Regular';
+            font-size: 13px;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            width: 100px;
+            line-height: 23px;
+        }
+
+        div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] {
+            padding: 10px 0px;
+            text-align: center;
+            font-family: 'Open Sans Bold';
+            font-size: 13px;
+            float: right;
+            overflow: hidden;
+            position: relative;
+            width: auto;
+        }
+
+            div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] a {
+                padding: 6px 5px;
+                text-align: center;
+                font-family: 'Open Sans Regular';
+                font-size: 13px;
+                cursor: pointer;
+                float: left;
+                overflow: hidden;
+                position: relative;
+                width: 20px;
+                height: 18px;
+                border: 1px solid transparent;
+                text-decoration: none;
+            }
+
+                div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] a:first-of-type {
+                    margin: 0px 0px 0px 20px;
+                }
+
+                div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] a:hover {
+                    background: rgba(200, 200, 200, .2);
+                    color: rgba(5, 5, 5, 1);
+                }
+
+                div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] a[current] {
+                    border: 1px solid rgba(0, 148, 255, 1);
+                    background: rgba(0, 148, 255, .1);
+                    color: rgba(5, 5, 5, 1);
+                    font-family: 'Open Sans Semibold';
+                    line-height: 18px;
+                }
+
+
+
+
+
+
+
+/**
+  ** Read Article
+  */
+div[layout-obj=article-reader] {
+    position: relative;
+    overflow: hidden;
+    margin: 90px 0px 0px 0px;
+    background: #FFF;
+    max-width: 1100px;
+    margin: 60px auto 100px auto;
+}
+
+    div[layout-obj=article-reader] div[reader=pane] {
+        position: relative;
+        overflow: hidden;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px none #000;
+        margin: 0px 0px 30px 0px;
+        display: -webkit-box;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-box-align: center;
+        box-align: center;
+    }
+
+        div[layout-obj=article-reader] div[reader=pane] div[pane] {
+            position: relative;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -ms-flex: 1;
+            -o-flex: 1;
+            flex: 1;
+        }
+
+        div[layout-obj=article-reader] div[reader=pane] div[pane=article] {
+            position: relative;
+            overflow: hidden;
+            border: 1px none #000;
+            margin: 0px 70px 0px 0px;
+            width: auto;
+        }
+
+            div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] {
+                position: relative;
+                overflow: hidden;
+                margin: 0px 0px 40px 0px;
+            }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=banner] {
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px none #000;
+                    margin: 0px 0px 25px 0px;
+                    width: auto;
+                    height: 530px;
+                    background-color: #EFEFEF;
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                    background-size: cover;
+                }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=title] {
+                    position: relative;
+                    font-size: 32px;
+                    font-family: 'Open Sans Semibold';
+                    margin: 0px 0px 15px 0px;
+                }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=title] a {
+                        text-decoration: none;
+                        opacity: 1;
+                        -webkit-transition: opacity .2s linear;
+                        -moz-transition: opacity .2s linear;
+                        -ms-transition: opacity .2s linear;
+                        -o-transition: opacity .2s linear;
+                        transition: opacity .2s linear;
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=title] a:hover {
+                            opacity: .6;
+                            -webkit-transition: opacity .2s linear;
+                            -moz-transition: opacity .2s linear;
+                            -ms-transition: opacity .2s linear;
+                            -o-transition: opacity .2s linear;
+                            transition: opacity .2s linear;
+                        }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=pos] {
+                    position: relative;
+                    font-size: 14px;
+                    font-family: 'Open Sans Regular';
+                    line-height: 23px;
+                    margin: 10px 0px 15px 0px;
+                }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=authr] {
+                    position: relative;
+                    font-size: 14px;
+                    font-family: 'Open Sans Bold';
+                    line-height: 33px;
+                    text-transform: capitalize;
+                }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=authr] span {
+                        margin-right: 20px;
+                    }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=sumry] {
+                    position: relative;
+                    font-size: 17px;
+                    font-family: 'Open Sans Light';
+                    line-height: 28px;
+                }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=sumry] img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+
+            div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=comment] {
+                position: relative;
+                overflow: hidden;
+                margin: 100px 0px 40px 0px;
+            }
+
+
+
+
+        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] {
+            position: relative;
+            overflow: hidden;
+            border: 1px none #000;
+            margin: 0px 0px 0px 0px;
+            max-width: 300px;
+            background: #FFF;
+        }
+
+            div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] {
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 30px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #EFEFEF !important;
+                display: block;
+            }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item]:last-of-type {
+                    border-bottom: none !important;
+                }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=title] {
+                    position: relative;
+                    overflow: hidden;
+                    font-size: 15px;
+                    font-family: 'Open Sans Semibold';
+                    line-height: 33px;
+                    text-transform: uppercase;
+                }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=body] {
+                    position: relative;
+                    overflow: hidden;
+                    font-size: 17px;
+                    font-family: 'Open Sans Light';
+                    line-height: 28px;
+                }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=form] {
+                    margin: 20px auto;
+                    overflow: hidden;
+                    float: none;
+                }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=form] div[textbox] {
+                        background: none;
+                        padding: 0px;
+                        position: relative;
+                        border: 1px solid #AAA;
+                    }
+
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][about] {
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px none #000;
+                    background: #FFF;
+                }
+
+
+
+                /* 
+ * Blog Post 
+ */
+                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] {
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px none #000;
+                    background: #FFF;
+                }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] {
+                        position: relative;
+                        overflow: hidden;
+                        border: 1px none #000;
+                        margin: 10px 0px 0px 0px;
+                        width: auto;
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] {
+                            position: relative;
+                            overflow: hidden;
+                            margin: 0px 0px 10px 0px;
+                        }
+
+                            div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=banner] {
+                                position: relative;
+                                overflow: hidden;
+                                border: 1px none #000;
+                                margin: 0px 0px 10px 0px;
+                                width: auto;
+                                height: 150px;
+                                background-color: #EFEFEF;
+                                background-repeat: no-repeat;
+                                background-position: top center;
+                                background-size: cover;
+                            }
+
+                            div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=title] {
+                                position: relative;
+                                font-size: 16px;
+                                font-family: 'Open Sans Semibold';
+                                margin: 0px 0px 15px 0px;
+                            }
+
+                                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=title] a {
+                                    text-decoration: none;
+                                    opacity: 1;
+                                    color: rgba(25,25,25,1);
+                                    -webkit-transition: opacity .2s linear;
+                                    -moz-transition: opacity .2s linear;
+                                    -ms-transition: opacity .2s linear;
+                                    -o-transition: opacity .2s linear;
+                                    transition: opacity .2s linear;
+                                }
+
+                                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=title] a:hover {
+                                        opacity: .6;
+                                        -webkit-transition: opacity .2s linear;
+                                        -moz-transition: opacity .2s linear;
+                                        -ms-transition: opacity .2s linear;
+                                        -o-transition: opacity .2s linear;
+                                        transition: opacity .2s linear;
+                                    }
+
+
+                /* 
+ * Newsletter 
+ */
+                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] {
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px none #000;
+                    background: #FFF;
+                }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[field-obj=textbox] {
+                        position: relative;
+                        overflow: hidden;
+                        width: auto;
+                        border: 1px solid rgba(200,200,200,.8);
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[field-obj=textbox] input[type=text] {
+                            position: relative;
+                            width: 100%;
+                            min-width: 100%;
+                            padding: 8px;
+                            font-size: 16px;
+                            min-height: 20px;
+                            border: none;
+                        }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[button-obj=submit] {
+                        position: relative;
+                        overflow: hidden;
+                        width: auto;
+                        background: rgba(0, 148, 255, 1);
+                        color: #FFF;
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[button-obj=submit] input[type=submit] {
+                            position: relative;
+                            width: 100%;
+                            min-width: 100%;
+                            min-height: 35px;
+                            max-height: inherit;
+                            font-size: 16px;
+                            padding: 8px;
+                            opacity: 0;
+                        }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[button-obj=submit] span {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            bottom: 0px;
+                            right: 0px;
+                            font-size: 16px;
+                            padding: 10px;
+                            line-height: 19px;
+                            text-align: center;
+                        }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-device-width:1024px) {
+
+    div[page=layout] div[layout-obj=headr] {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        overflow: hidden;
+        z-index: 100;
+        height: 65px;
+        background: rgba(30, 30, 30, 1);
+    }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] {
+            margin: auto;
+            width: auto;
+            max-width: inherit;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 100;
+            padding: 0px 0px 0px 0px;
+            border-bottom: 1px none rgba(255, 255, 255, 1);
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flexbox;
+        }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj] {
+                -webkit-box-flex: 1;
+                -moz-box-flex: 1;
+                -ms-flex: 1;
+                -o-flex: 1;
+                flex: 1;
+            }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] {
+                position: relative;
+                margin: auto;
+                width: auto;
+                max-width: 85%;
+            }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] {
+                float: left;
+                position: relative;
+                overflow: hidden;
+                width: 180px;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] div[left-obj=logo] {
+                    font-family: 'Open Sans Semibold';
+                    font-size: 45px;
+                    color: rgba(255, 255, 255, 1);
+                    text-shadow: rgba(0, 0, 0, .3) 2px 2px 10px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: left bottom;
+                    margin: 10px 0px 0px 0px;
+                    height: 52px;
+                }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] div[wrappr-obj=right] {
+                float: right;
+                position: relative;
+                width: auto;
+            }
+
+                /* Menu List Area*/
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] {
+                    padding: 10px 0px 0px 0px;
+                    cursor: pointer;
+                }
+
+                    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[dropdwn-obj=wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=shape] {
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        width: 23px;
+                        height: 4px;
+                        margin: 0px 0px 0px 10px;
+                        cursor: pointer;
+                        background: rgba(255, 255, 255, 1);
+                        display: none;
+                    }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=shape]:before {
+                width: 100%;
+                height: 4px;
+                content: "";
+                background: rgba(255, 255, 255, 1);
+                position: absolute;
+                top: 8px;
+                left: 0px;
+            }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=shape]:after {
+                width: 100%;
+                height: 4px;
+                content: "";
+                background: rgba(255, 255, 255, 1);
+                position: absolute;
+                top: 16px;
+                left: 0px;
+            }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] {
+                padding: 0px 0px;
+                position: relative;
+                white-space: nowrap;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] {
+                    display: inline-block;
+                    margin: 0px 0px 0px 0px;
+                    padding: 10px 15px 10px 15px;
+                    color: rgba(255, 255, 255, 1);
+                    position: relative;
+                    border: 1px none #fff;
+                }
+
+                    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:before {
+                        content: "";
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 1px;
+                        background: rgba(255, 255, 255, 1);
+                        background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                        background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                        background: -ms-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                        background: -o-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                        background: linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                    }
+
+                    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:last-of-type::before {
+                        display: none;
+                    }
+
+                    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] span {
+                        color: #FFF;
+                    }
+
+                        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] span[text] {
+                            color: #FFF;
+                            font-family: 'Open Sans Light';
+                        }
+
+                    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] a {
+                        color: rgba(0, 0, 0, 1);
+                        color: #FFF;
+                        text-decoration: none;
+                    }
+
+                    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:hover a {
+                        color: rgba(0, 148, 255, .5);
+                        color: rgba(229, 244, 254, 1);
+                        text-decoration: none;
+                        text-shadow: none;
+                    }
+
+
+
+    /**
+  ** Articles Search
+  */
+
+    div[layout-obj=blog-post-search] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 40px 0px;
+        max-width: 1100px;
+        margin: 30px auto 10px auto;
+        display: -webkit-box;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-box-align: center;
+        box-align: center;
+    }
+
+        div[layout-obj=blog-post-search] div[search] {
+            position: relative;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -ms-flex: 1;
+            -o-flex: 1;
+            flex: 1;
+        }
+
+        div[layout-obj=blog-post-search] div[search=field] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+        }
+
+            div[layout-obj=blog-post-search] div[search=field] div[field-obj=textbox] {
+                position: relative;
+                overflow: hidden;
+                width: auto;
+            }
+
+                div[layout-obj=blog-post-search] div[search=field] div[field-obj=textbox] input[type=text] {
+                    position: relative;
+                    width: 100%;
+                    min-width: 100%;
+                    font-size: 18px;
+                    line-height: 23px;
+                    padding: 8px;
+                    min-height: 30px;
+                }
+
+        div[layout-obj=blog-post-search] div[search=button] {
+            position: relative;
+            overflow: hidden;
+            max-width: 200px;
+        }
+
+            div[layout-obj=blog-post-search] div[search=button] div[button-obj=submit] {
+                position: relative;
+                overflow: hidden;
+                width: auto;
+                background: rgba(0, 148, 255, 1);
+                color: #FFF;
+                max-height: 48px;
+            }
+
+                div[layout-obj=blog-post-search] div[search=button] div[button-obj=submit] input[type=submit] {
+                    position: relative;
+                    width: 100%;
+                    min-width: 100%;
+                    min-height: 48px;
+                    max-height: inherit;
+                    font-size: 18px;
+                    padding: 13px;
+                    opacity: 0;
+                }
+
+                div[layout-obj=blog-post-search] div[search=button] div[button-obj=submit] span {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    bottom: 0px;
+                    right: 0px;
+                    font-size: 18px;
+                    padding: 10px;
+                    line-height: 23px;
+                    text-align: center;
+                }
+
+
+
+
+    div[layout-obj=reader-nav] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px auto 0px auto;
+        width: auto;
+        max-width: inherit;
+    }
+
+        div[layout-obj=reader-nav] div[reader-obj=navigatn] {
+            overflow: hidden;
+            margin: 0px 0px 0px 0px;
+            padding: 10px 15px 10px 15px;
+            font-size: 12px;
+            font-family: 'Open Sans Regular';
+            border-bottom: 1px solid #DDD;
+            background: #FFF;
+        }
+
+            div[layout-obj=reader-nav] div[reader-obj=navigatn] ul {
+                margin: 0px auto;
+                padding: 0px;
+                list-style: none;
+                overflow: hidden;
+                width: 100%;
+                max-width: 1165px;
+            }
+
+                div[layout-obj=reader-nav] div[reader-obj=navigatn] ul li {
+                    float: left;
+                }
+
+
+
+
+
+
+    /**
+  ** Articles Listing
+  */
+
+    div[layout-obj=blog-posts] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 40px 0px;
+        max-width: 1100px;
+        margin: 60px auto 100px auto;
+    }
+
+        div[layout-obj=blog-posts] div[posts-item=post] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px none #000;
+            margin: 0px 0px 30px 0px;
+            display: -webkit-box;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-box-align: center;
+            box-align: center;
+        }
+
+            div[layout-obj=blog-posts] div[posts-item=post] div[post] {
+                position: relative;
+                -webkit-flex: 1;
+                -moz-flex: 1;
+                -ms-flex: 1;
+                -o-flex: 1;
+                flex: 1;
+            }
+
+            div[layout-obj=blog-posts] div[posts-item=post] div[post=banner] {
+                position: relative;
+                overflow: hidden;
+                border: 1px none #000;
+                margin: 0px 0px 0px 80px;
+                max-width: 320px;
+                height: 200px;
+                background-color: #EFEFEF;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                -webkit-transition: opacity .2s linear;
+                -moz-transition: opacity .2s linear;
+                -ms-transition: opacity .2s linear;
+                -o-transition: opacity .2s linear;
+                transition: opacity .2s linear;
+            }
+
+                div[layout-obj=blog-posts] div[posts-item=post] div[post=banner]:hover {
+                    opacity: .6;
+                    -webkit-transition: opacity .2s linear;
+                    -moz-transition: opacity .2s linear;
+                    -ms-transition: opacity .2s linear;
+                    -o-transition: opacity .2s linear;
+                    transition: opacity .2s linear;
+                }
+
+            div[layout-obj=blog-posts] div[posts-item=post] div[post=article] {
+                position: relative;
+                overflow: hidden;
+                border: 1px none #000;
+                margin: 0px 0px 0px 0px;
+                width: auto;
+            }
+
+                div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0px 0px 40px 0px;
+                }
+
+                    div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=title] {
+                        position: relative;
+                        font-size: 26px;
+                        font-family: 'Open Sans Semibold';
+                        margin: 0px 0px 15px 0px;
+                    }
+
+                        div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=title] a {
+                            text-decoration: none;
+                            opacity: 1;
+                            color: rgba(25,25,25,1);
+                            -webkit-transition: opacity .2s linear;
+                            -moz-transition: opacity .2s linear;
+                            -ms-transition: opacity .2s linear;
+                            -o-transition: opacity .2s linear;
+                            transition: opacity .2s linear;
+                        }
+
+                            div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=title] a:hover {
+                                opacity: .6;
+                                -webkit-transition: opacity .2s linear;
+                                -moz-transition: opacity .2s linear;
+                                -ms-transition: opacity .2s linear;
+                                -o-transition: opacity .2s linear;
+                                transition: opacity .2s linear;
+                            }
+
+                    div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=pos] {
+                        position: relative;
+                        font-size: 12px;
+                        font-family: 'Open Sans Regular';
+                        line-height: 18px;
+                        margin: 10px 0px 15px 0px;
+                    }
+
+                    div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=authr] {
+                        position: relative;
+                        font-size: 12px;
+                        font-family: 'Open Sans Bold';
+                        line-height: 33px;
+                        text-transform: capitalize;
+                    }
+
+                        div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=authr] span {
+                            margin-right: 20px;
+                        }
+
+                    div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=sumry] {
+                        position: relative;
+                        font-size: 13px;
+                        font-family: 'Open Sans Light';
+                        line-height: 20px;
+                    }
+
+
+        div[layout-obj=blog-posts] div[posts-obj=paging] {
+            padding: 5px;
+            margin: 0px 0px 120px 0px;
+            text-align: center;
+            font-family: 'Open Sans Bold';
+            font-size: 13px;
+            border-top: 1px solid rgba(100, 100, 100, .1);
+        }
+
+            div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=title] {
+                padding: 10px 0px 10px 0px;
+                text-align: left;
+                font-family: 'Open Sans Regular';
+                font-size: 13px;
+                float: left;
+                overflow: hidden;
+                position: relative;
+                width: 100px;
+                line-height: 23px;
+            }
+
+            div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] {
+                padding: 10px 0px;
+                text-align: center;
+                font-family: 'Open Sans Bold';
+                font-size: 13px;
+                float: right;
+                overflow: hidden;
+                position: relative;
+                width: auto;
+            }
+
+                div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] a {
+                    padding: 6px 5px;
+                    text-align: center;
+                    font-family: 'Open Sans Regular';
+                    font-size: 13px;
+                    cursor: pointer;
+                    float: left;
+                    overflow: hidden;
+                    position: relative;
+                    width: 20px;
+                    height: 18px;
+                    border: 1px solid transparent;
+                    text-decoration: none;
+                }
+
+                    div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] a:first-of-type {
+                        margin: 0px 0px 0px 20px;
+                    }
+
+                    div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] a:hover {
+                        background: rgba(200, 200, 200, .2);
+                        color: rgba(5, 5, 5, 1);
+                    }
+
+                    div[layout-obj=blog-posts] div[posts-obj=paging] div[paging-obj=pages] a[current] {
+                        border: 1px solid rgba(0, 148, 255, 1);
+                        background: rgba(0, 148, 255, .1);
+                        color: rgba(5, 5, 5, 1);
+                        font-family: 'Open Sans Semibold';
+                        line-height: 18px;
+                    }
+
+
+
+
+
+
+    /**
+     ** Read Article
+     */
+    div[layout-obj=article-reader] {
+        position: relative;
+        overflow: hidden;
+        margin: 90px 0px 0px 0px;
+        background: #FFF;
+        max-width: 1100px;
+        margin: 20px auto 100px auto;
+    }
+
+        div[layout-obj=article-reader] div[reader=pane] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px none #000;
+            margin: 0px 0px 30px 0px;
+            display: -webkit-box;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-box-align: center;
+            box-align: center;
+        }
+
+            div[layout-obj=article-reader] div[reader=pane] div[pane] {
+                position: relative;
+                -webkit-flex: 1;
+                -moz-flex: 1;
+                -ms-flex: 1;
+                -o-flex: 1;
+                flex: 1;
+            }
+
+            div[layout-obj=article-reader] div[reader=pane] div[pane=article] {
+                position: relative;
+                overflow: hidden;
+                border: 1px none #000;
+                margin: 0px 25px 0px 0px;
+                width: auto;
+            }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0px 0px 40px 0px;
+                }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=banner] {
+                        position: relative;
+                        overflow: hidden;
+                        border: 1px none #000;
+                        margin: 0px 0px 25px 0px;
+                        width: auto;
+                        height: 310px;
+                        background-color: #EFEFEF;
+                        background-repeat: no-repeat;
+                        background-position: top center;
+                        background-size: cover;
+                    }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=title] {
+                        position: relative;
+                        font-size: 26px;
+                        font-family: 'Open Sans Semibold';
+                        margin: 0px 0px 15px 0px;
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=title] a {
+                            text-decoration: none;
+                            opacity: 1;
+                            -webkit-transition: opacity .2s linear;
+                            -moz-transition: opacity .2s linear;
+                            -ms-transition: opacity .2s linear;
+                            -o-transition: opacity .2s linear;
+                            transition: opacity .2s linear;
+                        }
+
+                            div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=title] a:hover {
+                                opacity: .6;
+                                -webkit-transition: opacity .2s linear;
+                                -moz-transition: opacity .2s linear;
+                                -ms-transition: opacity .2s linear;
+                                -o-transition: opacity .2s linear;
+                                transition: opacity .2s linear;
+                            }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=pos] {
+                        position: relative;
+                        font-size: 14px;
+                        font-family: 'Open Sans Regular';
+                        line-height: 23px;
+                        margin: 10px 0px 15px 0px;
+                    }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=authr] {
+                        position: relative;
+                        font-size: 12px;
+                        font-family: 'Open Sans Bold';
+                        line-height: 23px;
+                        text-transform: capitalize;
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=authr] span {
+                            margin-right: 20px;
+                        }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=sumry] {
+                        position: relative;
+                        font-size: 13px;
+                        font-family: 'Open Sans Light';
+                        line-height: 20px;
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=sumry] img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=comment] {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 100px 0px 40px 0px;
+                }
+
+
+
+
+            div[layout-obj=article-reader] div[reader=pane] div[pane=widget] {
+                position: relative;
+                overflow: hidden;
+                border: 1px none #000;
+                margin: 0px 0px 0px 0px;
+                max-width: 200px;
+                background: #FFF;
+            }
+
+                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] {
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 30px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #EFEFEF !important;
+                    display: block;
+                }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item]:last-of-type {
+                        border-bottom: none !important;
+                    }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=title] {
+                        position: relative;
+                        overflow: hidden;
+                        font-size: 15px;
+                        font-family: 'Open Sans Semibold';
+                        line-height: 33px;
+                        text-transform: uppercase;
+                    }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=body] {
+                        position: relative;
+                        overflow: hidden;
+                        font-size: 17px;
+                        font-family: 'Open Sans Light';
+                        line-height: 28px;
+                    }
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=form] {
+                        margin: 20px auto;
+                        overflow: hidden;
+                        float: none;
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=form] div[textbox] {
+                            background: none;
+                            padding: 0px;
+                            position: relative;
+                            border: 1px solid #AAA;
+                        }
+
+
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][about] {
+                        position: relative;
+                        overflow: hidden;
+                        border: 1px none #000;
+                        background: #FFF;
+                    }
+
+
+
+                    /* 
+                     * Blog Post 
+                     */
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] {
+                        position: relative;
+                        overflow: hidden;
+                        border: 1px none #000;
+                        background: #FFF;
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] {
+                            position: relative;
+                            overflow: hidden;
+                            border: 1px none #000;
+                            margin: 10px 0px 0px 0px;
+                            width: auto;
+                        }
+
+                            div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] {
+                                position: relative;
+                                overflow: hidden;
+                                margin: 0px 0px 10px 0px;
+                            }
+
+                                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=banner] {
+                                    position: relative;
+                                    overflow: hidden;
+                                    border: 1px none #000;
+                                    margin: 0px 0px 10px 0px;
+                                    width: auto;
+                                    height: 150px;
+                                    background-color: #EFEFEF;
+                                    background-repeat: no-repeat;
+                                    background-position: top center;
+                                    background-size: cover;
+                                }
+
+                                div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=title] {
+                                    position: relative;
+                                    font-size: 16px;
+                                    font-family: 'Open Sans Semibold';
+                                    margin: 0px 0px 15px 0px;
+                                }
+
+                                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=title] a {
+                                        text-decoration: none;
+                                        opacity: 1;
+                                        color: rgba(25,25,25,1);
+                                        -webkit-transition: opacity .2s linear;
+                                        -moz-transition: opacity .2s linear;
+                                        -ms-transition: opacity .2s linear;
+                                        -o-transition: opacity .2s linear;
+                                        transition: opacity .2s linear;
+                                    }
+
+                                        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=title] a:hover {
+                                            opacity: .6;
+                                            -webkit-transition: opacity .2s linear;
+                                            -moz-transition: opacity .2s linear;
+                                            -ms-transition: opacity .2s linear;
+                                            -o-transition: opacity .2s linear;
+                                            transition: opacity .2s linear;
+                                        }
+
+
+                    /* 
+                     * Newsletter 
+                     */
+                    div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] {
+                        position: relative;
+                        overflow: hidden;
+                        border: 1px none #000;
+                        background: #FFF;
+                    }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[field-obj=textbox] {
+                            position: relative;
+                            overflow: hidden;
+                            width: auto;
+                            border: 1px solid rgba(200,200,200,.8);
+                        }
+
+                            div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[field-obj=textbox] input[type=text] {
+                                position: relative;
+                                width: 100%;
+                                min-width: 100%;
+                                padding: 8px;
+                                font-size: 16px;
+                                min-height: 20px;
+                                border: none;
+                            }
+
+                        div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[button-obj=submit] {
+                            position: relative;
+                            overflow: hidden;
+                            width: auto;
+                            background: rgba(0, 148, 255, 1);
+                            color: #FFF;
+                        }
+
+                            div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[button-obj=submit] input[type=submit] {
+                                position: relative;
+                                width: 100%;
+                                min-width: 100%;
+                                min-height: 35px;
+                                max-height: inherit;
+                                font-size: 16px;
+                                padding: 8px;
+                                opacity: 0;
+                            }
+
+                            div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] div[button-obj=submit] span {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                bottom: 0px;
+                                right: 0px;
+                                font-size: 16px;
+                                padding: 10px;
+                                line-height: 19px;
+                                text-align: center;
+                            }
+
+
+
+
+
+
+    div[layout-obj=reader] {
+        position: relative;
+        overflow: hidden;
+        margin: 20px 15px 50px 15px;
+        width: auto;
+        max-width: 1108px;
+    }
+
+        div[layout-obj=reader] div[reader-obj=panel] {
+            position: relative;
+            overflow: hidden;
+            margin: 0px 0px;
+        }
+
+            div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] div[view-obj=left-pane] {
+                position: relative;
+                float: none;
+                overflow: hidden;
+                width: auto;
+                margin: 0px 0px 0px 0px;
+            }
+
+            div[layout-obj=reader] div[reader-obj=panel] div[panel-obj=right-view] div[view-obj=right-pane] {
+                position: relative;
+                float: right;
+                overflow: hidden;
+                /*width: 300px;*/
+                height: 400px;
+                margin: 0px 0px 0px 30px;
+                display: none;
+            }
+}
+
+@media screen and (max-device-width:760px) {
+    @-webkit-viewport {
+        width: 320px;
+    }
+
+    @-moz-viewport {
+        width: 320px;
+    }
+
+    @-ms-viewport {
+        width: 320px;
+    }
+
+    @-o-viewport {
+        width: 320px;
+    }
+
+    div[page=layout] div[layout-obj=headr] {
+        position: relative;
+        background: rgba(30, 30, 30, 1);
+        height: inherit;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+    }
+
+        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] {
+            margin: auto;
+            width: auto;
+            max-width: 100%;
+            position: relative;
+            z-index: 100;
+            padding: 0px 0px 0px 0px;
+            border-bottom: 1px none rgba(255, 255, 255, 1);
+            overflow: hidden;
+            display: block;
+        }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] {
+                float: none;
+                position: relative;
+                overflow: hidden;
+                width: 300px;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=left] div[left-obj=logo] {
+                    height: 60px;
+                    margin: 6px 10px !important;
+                }
+
+            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] {
+                float: none;
+                position: relative;
+                width: auto;
+                padding-right: 0px;
+            }
+
+                div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] {
+                    padding: 10px 0px 0px 0px;
+                    cursor: pointer;
+                }
+
+                    div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] {
+                        padding: 0px 0px;
+                        position: relative;
+                        white-space: nowrap;
+                    }
+
+                        div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] {
+                            display: block;
+                            margin: 0px 0px 0px 0px;
+                            padding: 10px 15px 10px 15px;
+                            font-size: 17px;
+                            color: rgba(255, 255, 255, 1);
+                            position: relative;
+                            border: 1px none #fff;
+                        }
+
+                            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:before {
+                                content: "";
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                bottom: 0px;
+                                width: 1px;
+                                background: rgba(255, 255, 255, 1);
+                                background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                background: -ms-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                background: -o-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                background: linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+                                display: none;
+                            }
+
+                            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:last-of-type::before {
+                                display: none;
+                            }
+
+                            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item] a {
+                                color: rgba(255, 255, 255, 1);
+                                text-decoration: none;
+                            }
+
+                            div[page=layout] div[layout-obj=headr] div[headr-obj=headr-wrappr] div[wrappr-obj=right] div[right-obj=menu-btn] div[btn-obj=menu-list] div[menu-obj=item]:hover a {
+                                color: rgba(255, 255, 255, 1);
+                                text-decoration: none;
+                                text-shadow: rgba(255, 255, 255, 1) 1px 1px 3px;
+                                text-shadow: rgba(20, 20, 20, .7) 1px 1px 4px;
+                            }
+
+
+
+
+
+    div[page=layout] div[layout-obj=body] {
+        position: relative;
+        overflow: hidden;
+        max-width: inherit;
+        margin: 30px auto 30px auto;
+        padding: 0px 20px;
+        min-height: inherit;
+    }
+
+
+
+    div[layout-obj=blog-post-search] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 40px 0px;
+        max-width: 1100px;
+        margin: 0px auto 20px auto;
+        display: block;
+        /*display: -webkit-box;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-box-align: center;
+        box-align: center;*/
+    }
+
+        div[layout-obj=blog-post-search] div[search] {
+            position: relative;
+            /*-webkit-flex: 1;
+            -moz-flex: 1;
+            -ms-flex: 1;
+            -o-flex: 1;
+            flex: 1;*/
+        }
+
+        div[layout-obj=blog-post-search] div[search=field] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+        }
+
+            div[layout-obj=blog-post-search] div[search=field] div[field-obj=textbox] {
+                position: relative;
+                overflow: hidden;
+                width: auto;
+            }
+
+                div[layout-obj=blog-post-search] div[search=field] div[field-obj=textbox] input[type=text] {
+                    position: relative;
+                    width: 100%;
+                    min-width: 100%;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 11px 10px;
+                    min-height: 20px;
+                    box-sizing: border-box;
+                }
+
+        div[layout-obj=blog-post-search] div[search=button] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+            max-width: 100%;
+        }
+
+            div[layout-obj=blog-post-search] div[search=button] div[button-obj=submit] {
+                position: relative;
+                overflow: hidden;
+                width: auto;
+                background: rgba(0, 148, 255, 1);
+                color: #FFF;
+                max-height: 44px;
+            }
+
+                div[layout-obj=blog-post-search] div[search=button] div[button-obj=submit] input[type=submit] {
+                    position: relative;
+                    width: 100%;
+                    min-width: 100%;
+                    min-height: 44px;
+                    max-height: inherit;
+                    font-size: 16px;
+                    padding: 13px;
+                    opacity: 0;
+                }
+
+                div[layout-obj=blog-post-search] div[search=button] div[button-obj=submit] span {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    bottom: 0px;
+                    right: 0px;
+                    font-size: 16px;
+                    padding: 12px 18px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+
+
+
+
+    /**
+	  ** Articles Listing
+	  */
+    div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 20px 0px;
+    }
+
+        div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px none #000;
+            margin: 0px 0px 20px 0px;
+            display: -webkit-box;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-box-align: center;
+            box-align: center;
+        }
+
+            div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post] {
+                position: relative;
+                -webkit-flex: 1;
+                -moz-flex: 1;
+                -ms-flex: 1;
+                -o-flex: 1;
+                flex: 1;
+            }
+
+            div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=banner] {
+                position: relative;
+                overflow: hidden;
+                border: 1px none #000;
+                margin: 0px 0px 0px 8px;
+                max-width: 110px;
+                height: 80px;
+                background-color: #EFEFEF;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                -webkit-transition: opacity .2s linear;
+                -moz-transition: opacity .2s linear;
+                -ms-transition: opacity .2s linear;
+                -o-transition: opacity .2s linear;
+                transition: opacity .2s linear;
+            }
+
+                div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=banner]:hover {
+                    opacity: .6;
+                    -webkit-transition: opacity .2s linear;
+                    -moz-transition: opacity .2s linear;
+                    -ms-transition: opacity .2s linear;
+                    -o-transition: opacity .2s linear;
+                    transition: opacity .2s linear;
+                }
+
+            div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=article] {
+                position: relative;
+                overflow: hidden;
+                border: 1px none #000;
+                margin: 0px 0px 0px 0px;
+                width: auto;
+            }
+
+                div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0px 0px 0px 0px;
+                }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=title] {
+                        position: relative;
+                        font-size: 14px;
+                        font-family: 'Open Sans Bold';
+                        margin: 0px 0px 5px 0px;
+                    }
+
+                        div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=title] a {
+                            text-decoration: none;
+                            opacity: 1;
+                            -webkit-transition: opacity .2s linear;
+                            -moz-transition: opacity .2s linear;
+                            -ms-transition: opacity .2s linear;
+                            -o-transition: opacity .2s linear;
+                            transition: opacity .2s linear;
+                        }
+
+                            div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=title] a:hover {
+                                opacity: .6;
+                                -webkit-transition: opacity .2s linear;
+                                -moz-transition: opacity .2s linear;
+                                -ms-transition: opacity .2s linear;
+                                -o-transition: opacity .2s linear;
+                                transition: opacity .2s linear;
+                            }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=authr] {
+                        position: relative;
+                        font-size: 12px;
+                        font-family: 'Open Sans Regular';
+                        line-height: 23px;
+                        text-transform: capitalize;
+                    }
+
+                        div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=authr] span {
+                            margin-right: 20px;
+                        }
+
+                            div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=authr] span:last-of-type {
+                                display: none;
+                            }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=blog-posts] div[posts-item=post] div[post=article] div[article=hint] div[hint=sumry] {
+                        position: relative;
+                        font-size: 17px;
+                        font-family: 'Open Sans Light';
+                        line-height: 30px;
+                        display: none;
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /**
+	  ** Read Article
+	  */
+    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] {
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 0px 0px;
+        background: #FFF;
+    }
+
+        div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px none #000;
+            margin: 0px 0px 30px 0px;
+            display: -webkit-box;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            display: block;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-box-align: center;
+            box-align: center;
+        }
+
+            div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane] {
+                position: relative;
+                -webkit-flex: 1;
+                -moz-flex: 1;
+                -ms-flex: 1;
+                -o-flex: 1;
+                flex: 1;
+            }
+
+            div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] {
+                position: relative;
+                overflow: hidden;
+                border: 1px none #000;
+                margin: 0px 0px 0px 0px;
+                width: auto;
+            }
+
+                div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0px 0px 40px 0px;
+                }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=banner] {
+                        position: relative;
+                        overflow: hidden;
+                        border: 1px none #000;
+                        margin: 0px 0px 25px 0px;
+                        width: auto;
+                        height: 250px;
+                        background-color: #EFEFEF;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=title] {
+                        position: relative;
+                        font-size: 20px;
+                        font-family: 'Open Sans Semibold';
+                        margin: 0px 0px 15px 0px;
+                    }
+
+                        div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=title] a {
+                            text-decoration: none;
+                            opacity: 1;
+                            -webkit-transition: opacity .2s linear;
+                            -moz-transition: opacity .2s linear;
+                            -ms-transition: opacity .2s linear;
+                            -o-transition: opacity .2s linear;
+                            transition: opacity .2s linear;
+                        }
+
+                            div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=title] a:hover {
+                                opacity: .6;
+                                -webkit-transition: opacity .2s linear;
+                                -moz-transition: opacity .2s linear;
+                                -ms-transition: opacity .2s linear;
+                                -o-transition: opacity .2s linear;
+                                transition: opacity .2s linear;
+                            }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=authr] {
+                        position: relative;
+                        font-size: 12px;
+                        font-family: 'Open Sans Regular';
+                        line-height: 23px;
+                        text-transform: capitalize;
+                    }
+
+                        div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=authr] span {
+                            margin-right: 20px;
+                        }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=sumry] {
+                        position: relative;
+                        font-size: 17px;
+                        font-family: 'Open Sans Light';
+                        line-height: 28px;
+                    }
+
+                        div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=content] div[content=sumry] img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+
+                div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=article] div[article=comment] {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 100px 0px 40px 0px;
+                }
+
+
+
+
+            div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] {
+                position: relative;
+                overflow: hidden;
+                border: 1px none #000;
+                margin: 0px 0px 0px 0px;
+                max-width: inherit;
+                background: #FFF;
+            }
+
+                div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] {
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 30px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #EFEFEF !important;
+                    display: block;
+                }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item]:last-of-type {
+                        border-bottom: none !important;
+                    }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=title] {
+                        position: relative;
+                        overflow: hidden;
+                        font-size: 15px;
+                        font-family: 'Open Sans Semibold';
+                        line-height: 33px;
+                        text-transform: uppercase;
+                    }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=body] {
+                        position: relative;
+                        overflow: hidden;
+                        font-size: 17px;
+                        font-family: 'Open Sans Light';
+                        line-height: 28px;
+                    }
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=form] {
+                        margin: 20px auto;
+                        overflow: hidden;
+                        float: none;
+                    }
+
+                        div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item] div[item=form] div[textbox] {
+                            background: none;
+                            padding: 0px;
+                            position: relative;
+                            border: 1px solid #AAA;
+                        }
+
+
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][about] {
+                        position: relative;
+                        overflow: hidden;
+                        border: 1px none #000;
+                        background: #FFF;
+                    }
+
+
+
+                    /* 
+	 * Blog Post 
+	 */
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] {
+                        position: relative;
+                        overflow: hidden;
+                        border: 1px none #000;
+                        background: #FFF;
+                    }
+
+                        div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] {
+                            position: relative;
+                            overflow: hidden;
+                            border: 1px none #000;
+                            margin: 10px 0px 0px 0px;
+                            width: auto;
+                        }
+
+                            div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] {
+                                position: relative;
+                                overflow: hidden;
+                                margin: 0px 0px 10px 0px;
+                            }
+
+                                div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=banner] {
+                                    position: relative;
+                                    overflow: hidden;
+                                    border: 1px none #000;
+                                    margin: 0px 0px 10px 0px;
+                                    width: auto;
+                                    height: 150px;
+                                    background-color: #EFEFEF;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+
+                                div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=title] {
+                                    position: relative;
+                                    font-size: 16px;
+                                    font-family: 'Open Sans Semibold';
+                                    margin: 0px 0px 15px 0px;
+                                }
+
+                                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=title] a {
+                                        text-decoration: none;
+                                        opacity: 1;
+                                        -webkit-transition: opacity .2s linear;
+                                        -moz-transition: opacity .2s linear;
+                                        -ms-transition: opacity .2s linear;
+                                        -o-transition: opacity .2s linear;
+                                        transition: opacity .2s linear;
+                                    }
+
+                                        div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][blog-posts] div[item=posts] div[posts=post] div[post=title] a:hover {
+                                            opacity: .6;
+                                            -webkit-transition: opacity .2s linear;
+                                            -moz-transition: opacity .2s linear;
+                                            -ms-transition: opacity .2s linear;
+                                            -o-transition: opacity .2s linear;
+                                            transition: opacity .2s linear;
+                                        }
+
+
+                    /* 
+	 * Newsletter 
+	 */
+                    div[page=layout] div[layout-obj=body] div[layout-obj=article-reader] div[reader=pane] div[pane=widget] div[widget=item][newsletter] {
+                        position: relative;
+                        overflow: hidden;
+                        border: 1px none #000;
+                        background: #FFF;
+                    }
+
+
+    /*div[page=layout] div[layout-obj=footr] {
+        padding: 0px 0px 0px 0px;
+        background: rgba(30, 30, 30, 1);
+        border-top: 4px solid rgba(255, 255, 255, 1);
+        position: relative;
+    }
+
+        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] {
+            position: relative;
+            overflow: hidden;
+            width: auto;
+            margin: auto;
+            padding: 15px 0px;
+        }
+
+            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] {
+                margin: 0px 15px;
+            }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] {
+                    position: relative;
+                    float: none;
+                    overflow: hidden;
+                    width: auto;
+                    color: #FFF;
+                }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] div[lft-pane-obj=social] {
+                        position: relative;
+                        overflow: hidden;
+                        color: #FFF;
+                        width: 190px;
+                        margin: auto;
+                    }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] div[lft-pane-obj=social] div[social-obj=soc-itm] {
+                            position: relative;
+                            overflow: hidden;
+                            float: left;
+                            width: 39px;
+                            height: 39px;
+                            border: 2px solid #FFF;
+                            border-radius: 60px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 70%;
+                            margin: 0px 6px 0px 0px;
+                            text-align: center;
+                            white-space: nowrap;
+                        }
+
+                            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] div[lft-pane-obj=social] div[social-obj=soc-itm]:last-of-type {
+                                margin: 0px 0px 0px 0px;
+                            }
+
+                            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=lft-pane] div[lft-pane-obj=social] div[social-obj=soc-itm] i {
+                                line-height: 38px;
+                                font-size: 26px;
+                                text-align: center;
+                            }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] {
+                    padding: 0px 0px 0px 0px;
+                    margin: 50px 0px 0px 0px;
+                    text-align: center;
+                }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=top] ul[top-obj=colsvw] li[colsvw-obj=col] {
+                        position: relative;
+                        float: none;
+                        width: auto;
+                        margin: 0px 0px 0px 0px;
+                    }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] {
+                        position: relative;
+                        float: none;
+                        width: auto;
+                        margin: 0px;
+                    }
+
+
+
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=top] ul[top-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] {
+                        position: relative;
+                        font-size: 14px;
+                        line-height: 25px;
+                        overflow: hidden;
+                        text-align: center;
+                        margin: auto;
+                    }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=top] ul[top-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] div[row-obj=img] {
+                            position: relative;
+                            float: none;
+                            display: inline;
+                            width: 14px;
+                            height: 14px;
+                            margin: 0px 10px 0px 0px;
+                            background-size: 100%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=top] ul[top-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] div[row-obj=text] {
+                            position: relative;
+                            float: none;
+                            width: auto;
+                        }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] {
+                        position: relative;
+                        overflow: hidden;
+                        width: auto;
+                        margin: 40px 0px 0px 0px;
+                        color: rgba(255, 255, 255, .7);
+                    }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] {
+                            position: relative;
+                            margin: 0px;
+                            padding: 0px;
+                            list-style: none;
+                            overflow: hidden;
+                        }
+
+                            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] {
+                                position: relative;
+                                float: none;
+                                min-width: 100px;
+                                margin: 0px 0px 0px 0px;
+                            }
+
+                                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col]:nth-of-type(2n) {
+                                    display: none;
+                                }
+
+                                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col]:last-of-type {
+                                    margin-right: 0px;
+                                }
+
+                                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] {
+                                    position: relative;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    list-style: none;
+                                }
+
+                                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row][type=headr] {
+                                        position: relative;
+                                        font-size: 19px;
+                                        line-height: 30px;
+                                        color: rgba(2555, 255, 255, .7);
+                                    }
+
+                                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] {
+                                        position: relative;
+                                        font-size: 13px;
+                                        line-height: 25px;
+                                        overflow: hidden;
+                                    }
+
+                                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] div[row-obj=img] {
+                                            position: relative;
+                                            float: left;
+                                            width: 14px;
+                                            height: 14px;
+                                            margin: 0px 10px 0px 0px;
+                                            background-size: 100%;
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                        }
+
+                                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=top-layr] div[top-layr-obj=rgt-pane] div[rgt-pane-obj=bottom] ul[bottom-obj=colsvw] li[colsvw-obj=col] ul[col-obj=rowsvw] li[rowsvw-obj=row] div[row-obj=text] {
+                                            position: relative;
+                                            float: left;
+                                            width: auto;
+                                        }
+
+
+
+            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] {
+                position: relative;
+                overflow: hidden;
+                color: rgba(255, 255, 255, .7);
+                font-size: 11px;
+                margin: 30px 0px 0px 0px;
+            }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=copyright] {
+                    position: relative;
+                    overflow: hidden;
+                    float: left;
+                    width: 350px;
+                }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] {
+                    position: relative;
+                    overflow: hidden;
+                    float: none;
+                    width: auto;
+                }
+
+                    div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] ul {
+                        margin: 0px;
+                        padding: 0px;
+                        list-style: none;
+                        overflow: hidden;
+                    }
+
+                        div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] ul li {
+                            float: left;
+                            margin: 0px 10px 0px 0px;
+                        }
+
+                            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] ul li:last-of-type {
+                                margin-right: 0px;
+                            }
+
+
+
+
+            div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] {
+                margin: 0px 20px;
+            }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=copyright] {
+                    position: relative;
+                    overflow: hidden;
+                    float: none;
+                    margin: auto;
+                    width: auto;
+                    text-align: center;
+                }
+
+                div[page=layout] div[layout-obj=footr] div[footr-obj=footr-wrappr] div[wrappr-obj=btm-layr] div[layr-obj=terms] {
+                    position: relative;
+                    overflow: hidden;
+                    float: none;
+                    width: auto;
+                    margin: auto;
+                    text-align: center;
+                }*/
+}

@@ -1,0 +1,13 @@
+# Various rewrite rules.
+
+#AddType video/ogg  .ogg .ogv .ogm
+#AddType video/webm .webm
+#AddType video/mp4  .mp4
+
+#AddType audio/ogg  .ogg
+#AddType audio/mp3  .mp3
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule	^([A-Za-z0-9&_-]+)/?([A-Za-z0-9&_-]*)/?([A-Za-z0-9&_-]*)/?([A-Za-z0-9&_-]*)/?$	index.php?controller=$1&action=$2&id=$3	[NC,L]
+</IfModule>
